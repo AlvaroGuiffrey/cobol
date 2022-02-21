@@ -1,0 +1,13 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE CLAVES
+      *-----------------------------------------------
+           SELECT CLAVES;
+                  ASSIGN TO RANDOM "CLAVES"
+                  ORGANIZATION IS INDEXED
+                  ACCESS MODE IS DYNAMIC
+                  RECORD KEY IS CLAVE-CLAVES.
+      *-----------------------------------------------
+      * NOMBRE SELECT: CLAVES.SEL
+      * VERSION: 001   FECHA: 10/94.
+      *===============================================
+

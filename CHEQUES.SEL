@@ -1,0 +1,9 @@
+           SELECT CHEQUES ASSIGN TO RANDOM "CHEQUES"
+                  ORGANIZATION IS INDEXED
+                  ACCESS MODE IS DYNAMIC
+                  RECORD KEY IS CLAVE-CHEQUES
+             ALTERNATE RECORD KEY IS CH-CLAVE-FACTURA WITH DUPLICATES
+             ALTERNATE RECORD KEY IS CH-CLAVE-BCO WITH DUPLICATES
+             ALTERNATE RECORD KEY IS CH-CLAVE-FEC-VENC WITH DUPLICATES.
+             
+

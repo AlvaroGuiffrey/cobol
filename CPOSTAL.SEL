@@ -1,0 +1,16 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE CPOSTAL
+      *-----------------------------------------------
+              SELECT CPOSTAL;
+              ASSIGN TO RANDOM "CPOSTAL"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-C-POSTAL
+              ALTERNATE RECORD KEY IS NOM-POSTAL WITH DUPLICATES
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -ADM. MUNICIPAL- 
+      * NOMBRE SELECT: CPOSTAL.SEL
+      * VERSION: 001   FECHA: MAY'91
+      *===============================================
+

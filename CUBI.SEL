@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE CUBIERTAS
+      *------------------------------------------------
+              SELECT CUBI
+              ASSIGN TO RANDOM "CUBI"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-CUBI
+              FILE STATUS IS ERRORES.
+      *------------------------------------------------
+      * SISTEMA: -CONTROL DE GESTION-
+      * NOMBRE SELECT: CUBI.SEL
+      * VERSION: 001   FECHA: ABR'91
+      *================================================
+

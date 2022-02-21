@@ -1,0 +1,15 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE CUENTAS ALFABETICO
+      *-----------------------------------------------
+              SELECT CTAAL;
+              ASSIGN TO RANDOM "CTAAL"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-CTAAL
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- 
+      * NOMBRE SELECT: CUENTAAL.SEL
+      * VERSION: 001   FECHA: ENE'91
+      *===============================================
+

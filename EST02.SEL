@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE ESTADISTICA DE ARTICULOS
+      *------------------------------------------------
+              SELECT EST02
+              ASSIGN TO RANDOM "EST02"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-EST02
+              FILE STATUS IS ERRORES.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (STOCK)
+      * NOMBRE SELECT: EST02.SEL
+      * VERSION: 001   FECHA: JUL'90
+      *=================================================
+

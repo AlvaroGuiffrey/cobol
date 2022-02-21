@@ -1,0 +1,23 @@
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+      * CAMPOS DE CLAVES
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+       01 CLAVE-1-CAP.    
+           02 CLAVE-11-CAP  PIC 9 VALUE 0.
+           02 CLAVE-12-CAP  PIC 9 VALUE 0.
+           02 CLAVE-13-CAP  PIC 9 VALUE 0.
+       01 CLAVE-2-CAP.
+           02 CLAVE-21-CAP  PIC 9 VALUE 0.
+           02 CLAVE-22-CAP  PIC 9 VALUE 0.
+           02 CLAVE-23-CAP  PIC 9 VALUE 0.
+       01 CLAVE-3-CAP.
+           02 CLAVE-31-CAP  PIC 9 VALUE 0.
+           02 CLAVE-32-CAP  PIC 9 VALUE 0.
+           02 CLAVE-33-CAP  PIC 9 VALUE 0.
+       01 CLAVE-1-COM      PIC 999.
+       01 CLAVE-2-COM      PIC 999.
+       01 CLAVE-3-COM      PIC 999.
+       01 COD-CLAVE        PIC 9 VALUE 0.
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+      * NOMBRE: CLAVE.PRO
+      * VERSION: 001             FECHA: OCT'91
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

@@ -1,0 +1,15 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE EMPRESAS
+      *-----------------------------------------------
+              SELECT EMPRESAS;
+              ASSIGN TO RANDOM "EMPRESAS"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-EMP
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- 
+      * NOMBRE SELECT: EMPRE.SEL
+      * VERSION: 001   FECHA: JUL'90
+      *===============================================
+

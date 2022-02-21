@@ -1,0 +1,18 @@
+       01   CONDI                 PIC 9(3) COMP.
+            88  ESCAPE-X       VALUE 027.
+            88  EFE01        VALUE 01.
+            88  EFE02        VALUE 02.
+            88  EFE03        VALUE 03.
+            88  EFE04        VALUE 04.
+            88  EFE05        VALUE 05.
+            88  EFE06        VALUE 06.
+            88  EFE07        VALUE 07.
+            88  EFE08        VALUE 08.
+            88  EFE09        VALUE 09.
+            88  EFE10        VALUE 10.
+
+       01  SW                     PIC 9.      
+       01  ERRORES                PIC XX.
+       01  COD1                   PIC X.
+
+

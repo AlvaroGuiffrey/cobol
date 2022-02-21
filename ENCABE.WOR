@@ -1,0 +1,79 @@
+       01  RENGLONES.
+           03  RENG1.
+               05  FILLER         PIC X(60) VALUE SPACES.
+               05  NUMERO-ED      PIC 9(8).
+           03  RENG2.    
+               05  FILLER         PIC X(45) VALUE SPACES.
+               05  FILLER         PIC X(7) VALUE " ".
+               05  FILLER         PIC X(5) VALUE SPACES.
+               05  FECHA-F.
+                   07  DIA-F      PIC 99/.
+                   07  MES-F      PIC 99/.
+                   07  ANO-F      PIC 99.
+           03  RENG3.
+               05  FILLER         PIC X(5) VALUE SPACES.
+               05  NOMBRE-ED      PIC X(30).
+               05  FILLER         PIC X(26) VALUE SPACES.
+               05  NRO-CTA-ED     PIC ZZZZZZB.
+               05  S-NRO-CTA-ED   PIC ZZ.
+
+           03  RENG4.
+               05  FILLER         PIC X(5) VALUE SPACES.
+               05  DIRE-ED        PIC X(30)BB.
+           03  RENG4-1.
+               05  FILLER         PIC X(5) VALUE SPACES.
+               05  CPOS-ED        PIC ZZZZBBB.
+               05  LOCA-ED        PIC X(30).
+           03  RENG5.
+               05  FILLER         PIC X(5) VALUE SPACES.
+               05  IVA-ED         PIC X(27).
+               05  FILLER         PIC X(13) VALUE "C.U.I.T. :".
+               05  CUIT-ED        PIC X(15).
+           03  RENG6.
+               05  COND-ED        PIC X(20).
+               05  FILLER         PIC X(15) VALUE SPACES.
+               05  FILLER         PIC X(12) VALUE " ".
+               05  VIAJ-ED        PIC ZZZZZZ.
+               05  FILLER         PIC X(5) VALUE SPACES.
+               05  FILLER         PIC X(10) VALUE " ".
+           03  RENG6-1.
+               05  FILLER         PIC X(2).
+               05  FILLER         PIC X(12)BB VALUE " CANTIDAD".
+               05  FILLER         PIC X(8)BB  VALUE "ARTICULO".
+               05  FILLER         PIC X(30) VALUE 
+                                  " D E S C R I P C I O N".
+               05  FILLER         PIC X(10)BB VALUE "  PRECIO".
+           03  RENG7.
+               05  FILLER         PIC X(2) VALUE SPACES.
+               05  CANT-ED        PIC ZZZ,ZZ9.99BBBB.
+               05  ARTI-ED        PIC ZZZZZZBBBB.
+               05  DESC-ED        PIC X(30).
+               05  PRECIO-ED      PIC ZZZ,ZZ9.99BB.
+               05  PRECIO-TOT-ED  PIC ZZZ,ZZ9.99.
+           03  RENG8.
+               05  FILLER         PIC X(73) VALUE SPACES.
+               05  S-TOTAL-ED     PIC ZZZ,ZZ9.99.
+           03  RENG9.
+               05  FILLER         PIC X(2) VALUE SPACES. 
+               05  FILLER         PIC X(30) VALUE 
+                   "ORIGINAL ...: CLIENTE".
+               05  FILLER         PIC X(25) VALUE SPACES.
+               05  FILLER         PIC X(20) VALUE "RET. DGR".
+               05  DGR-ED         PIC ZZZ,ZZ9.99.
+           03  RENG10.
+               05  FILLER         PIC X(2) VALUE SPACES. 
+               05  FILLER         PIC X(30) VALUE 
+                   "COPIA N§ 1 .: ARCHIVO".
+               05  FILLER         PIC X(45) VALUE SPACES.
+               05  IVA-INS-ED         PIC ZZZ,ZZ9.99.
+           
+           03  RENG11.
+               05  FILLER         PIC X(2) VALUE SPACES. 
+               05  FILLER         PIC X(30) VALUE 
+                   "COPIA N§ 2 .:  CLIENTE".
+               05  FILLER         PIC X(45) VALUE SPACES.
+               05  IVA-N-INS-ED   PIC ZZZ,ZZ9.99.
+           03  RENG12.
+               05  FILLER         PIC X(78) VALUE SPACES.
+               05  TOT-ED         PIC ZZZ,ZZ9.99.
+               

@@ -1,0 +1,10 @@
+       01  REG-WCLAVES.
+           03  WCLAVE-CLAVES.
+               05  WCLA-EMP        PIC 9(4). 
+               05  WCLA-SUC        PIC 9(4).
+           03  WCLAVE1             PIC 9(10).
+           03  WCLAVE2             PIC X(10).
+           03  WCLAVE3             PIC X(10).
+           03  FILLER             PIC X(10).
+
+

@@ -1,0 +1,9 @@
+
+            
+           SELECT CACETES ASSIGN TO RANDOM "c:\cacete\CACETES"
+                  ORGANIZATION IS INDEXED
+                  ACCESS MODE IS DYNAMIC
+                  RECORD KEY IS CLAVE-CACETES
+                  ALTERNATE RECORD KEY IS CA-CLAVE-INTER
+             ALTERNATE RECORD KEY IS CA-CLAVE-NOMBRE WITH DUPLICATES.
+

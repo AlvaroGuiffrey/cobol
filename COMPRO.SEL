@@ -1,0 +1,15 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE COMPROBANTES
+      *-----------------------------------------------
+              SELECT COMPRO
+              ASSIGN TO RANDOM "COMPRO"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-COMPRO
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- 
+      * NOMBRE SELECT: COMPRO.SEL
+      * VERSION: 001   FECHA: ENE'91
+      *===============================================
+

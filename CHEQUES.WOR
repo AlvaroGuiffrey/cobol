@@ -1,0 +1,33 @@
+
+       01 WREG-WCHEQUES.
+          03  WCLAVE-WCHEQUES.
+              05  WCH-EMP                PIC 9(4).
+              05  WCH-SUC                PIC 99.
+              05  WCH-BCO                PIC 9999.
+              05  WCH-CPOSTAL            PIC 9(4).
+              05  WCH-NUMERO-CH          PIC 9(10).
+          03  WCH-FEC-REC.
+              05  WCH-DIA-REC            PIC 99.
+              05  WCH-MES-REC            PIC 99.
+              05  WCH-ANO-REC            PIC 9999.
+          03  WCH-CLAVE-FACTURA.
+              05  WCH-NRO-FACTURA        PIC 9(8).
+              05  WCH-NRO-CHEQUE         PIC 9(10).
+          03  WCH-NRO-CTA                PIC 9(8).
+          03  WCH-IMP-FACTURA            PIC 9(8)V99.
+          03  WCH-CLAVE-FEC-VENC.
+              05  WCH-FEC-VENC.
+                  07  WCH-DIA-VENC       PIC 99.
+                  07  WCH-MES-VENC       PIC 99.
+                  07  WCH-ANO-VENC       PIC 9999.
+              05  WCH-NUM-WCHEQUE         PIC 9(10).
+          03  WCH-ENTREGADO-A            PIC X(30).
+          03  WCH-FECHA-ENTREGA.
+              05  WCH-DIA-ENT            PIC 99.
+              05  WCH-MES-ENT            PIC 99.
+              05  WCH-ANO-ENT            PIC 9999.
+          03  WCH-CONCEPTO-ENT           PIC X(30).
+          03  WCH-COD-VENC               PIC 9.
+          03  WCH-COMENTA                PIC X(30).
+          03  WCH-RUBRO                  PIC 9(7).
+

@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE CONDICIONES DE VENTAS.
+      *------------------------------------------------
+              SELECT CONDI
+              ASSIGN TO RANDOM "CONDI"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-CONDI
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (VENTA)
+      * NOMBRE SELECT: CONDI.SEL
+      * VERSION: 001   FECHA: ENE'91
+      *===============================================
+

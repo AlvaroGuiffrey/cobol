@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE COTIZACION DE MONEDAS
+      *------------------------------------------------
+              SELECT COTIZA9
+              ASSIGN TO RANDOM "COTIZA9"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-COTIZA9
+              FILE STATUS IS ERRORES.
+      *------------------------------------------------
+      * SISTEMA: -CONTABILIDAD GENERAL-
+      * NOMBRE SELECT: COTIZA.SEL
+      * VERSION: 001   FECHA: OCT'90
+      *================================================
+

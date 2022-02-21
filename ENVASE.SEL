@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO  DE ENVASES
+      *------------------------------------------------
+              SELECT ENVASE
+              ASSIGN TO RANDOM "ENVASE"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-ENVASE
+              FILE STATUS IS ERRORES.
+      *------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (STOCK)
+      * NOMBRE SELECT: ENVASE.SEL
+      * VERSION: 001   FECHA: ENE'91
+      *================================================
+

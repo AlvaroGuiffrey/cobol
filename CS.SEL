@@ -1,0 +1,16 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE CUENTAS
+      *-----------------------------------------------
+                SELECT CUENTAS
+                ASSIGN TO RANDOM "CS"
+                ORGANIZATION IS INDEXED
+                ACCESS MODE IS DYNAMIC
+                RECORD KEY IS CLAVE-CTA
+                ALTERNATE RECORD KEY IS NOMBRE-C WITH DUPLICATES
+                FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- 
+      * NOMBRE SELECT: CUENTA.SEL
+      * VERSION: 001   FECHA: SET'90
+      *===============================================
+

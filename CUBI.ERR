@@ -1,0 +1,30 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE CUBI
+      *-----------------------------------------------
+       I-O-CUBI  SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON CUBI.
+       I-O-CREACUBI.
+           DISPLAY " SE PRODUCE ERROR " LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 22 REVERSE.
+           DISPLAY " EN ARCH. CUBI.   - LO CREO? [ ]"
+                  LINE 25 POSITION 24 REVERSE.
+       OPCION-CUBI.
+           ACCEPT COD1 LINE 25 POSITION 54 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT CUBI
+                                       CLOSE CUBI
+                                       OPEN I-O CUBI
+                                       GO TO FIN-CUBI.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPCION-CUBI.
+       FIN-CUBI.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -CONTROL DE GESTION - (ERRORES)
+      * NOMBRE RUTINA: CUBI.ERR
+      * VERSION: 001   FECHA: ABR'91
+      *=================================================
+
+
+

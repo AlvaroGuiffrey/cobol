@@ -1,0 +1,34 @@
+       MOVER-CHEQUES.
+           MOVE WCH-ANO-REC          TO CH-ANO-REC.
+           MOVE WCH-MES-REC          TO CH-MES-REC.
+           MOVE WCH-DIA-REC          TO CH-DIA-REC.
+           MOVE WCH-NRO-FACTURA      TO CH-NRO-FACTURA.
+           MOVE WCH-NRO-CTA          TO CH-NRO-CTA.
+           MOVE WCH-IMP-FACTURA      TO CH-IMP-FACTURA.
+           MOVE WCH-ANO-VENC         TO CH-ANO-VENC.
+           MOVE WCH-MES-VENC         TO CH-MES-VENC.
+           MOVE WCH-DIA-VENC         TO CH-DIA-VENC.
+           MOVE WCH-ENTREGADO-A      TO CH-ENTREGADO-A.
+           MOVE WCH-ANO-ENT          TO CH-ANO-ENT.
+           MOVE WCH-MES-ENT          TO CH-MES-ENT.
+           MOVE WCH-DIA-ENT          TO CH-DIA-ENT.
+           MOVE WCH-CONCEPTO-ENT     TO CH-CONCEPTO-ENT.
+           MOVE WCH-RUBRO            TO CH-RUBRO.   
+       CHEQUES-MOVER.
+           MOVE CH-ANO-REC           TO WCH-ANO-REC.
+           MOVE CH-MES-REC           TO WCH-MES-REC.
+           MOVE CH-DIA-REC           TO WCH-DIA-REC.
+           MOVE CH-NRO-FACTURA       TO WCH-NRO-FACTURA.
+           MOVE CH-NRO-CTA           TO WCH-NRO-CTA.
+           MOVE CH-IMP-FACTURA       TO WCH-IMP-FACTURA.
+           MOVE CH-ANO-VENC          TO WCH-ANO-VENC.
+           MOVE CH-MES-VENC          TO WCH-MES-VENC.
+           MOVE CH-DIA-VENC          TO WCH-DIA-VENC.
+           MOVE CH-ENTREGADO-A       TO WCH-ENTREGADO-A.
+           MOVE CH-ANO-ENT           TO WCH-ANO-ENT.
+           MOVE CH-MES-ENT           TO WCH-MES-ENT.
+           MOVE CH-DIA-ENT           TO WCH-DIA-ENT.
+           MOVE CH-CONCEPTO-ENT      TO WCH-CONCEPTO-ENT.
+           MOVE CH-RUBRO             TO WCH-RUBRO.
+
+

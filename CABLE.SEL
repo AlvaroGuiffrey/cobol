@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE CABLE.
+      *------------------------------------------------
+              SELECT CABLE
+              ASSIGN TO RANDOM "CABLE"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-CABLE
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (VENTA)
+      * NOMBRE SELECT: CABLE.SEL
+      * VERSION: 001   FECHA: ENE'93
+      *===============================================
+

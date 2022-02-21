@@ -1,0 +1,8 @@
+       MOVER-CLAVES.
+           MOVE WCLAVE1          TO CLAVE1
+           MOVE WCLAVE2          TO CLAVE2
+           MOVE WCLAVE3          TO CLAVE3.
+       CLAVES-MOVER.
+           MOVE CLAVE1           TO WCLAVE1
+           MOVE CLAVE2           TO WCLAVE2
+           MOVE CLAVE3           TO WCLAVE3.

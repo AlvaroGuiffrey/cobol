@@ -1,0 +1,30 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE CLAVES
+      *-----------------------------------------------
+       I-O-CLAVES SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON CLAVES.
+       I-O-CREACLAVES.
+           DISPLAY SPACES LINE 25 POSITION 1 SIZE 80.
+           DISPLAY " ERROR -" LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 9 REVERSE.
+           DISPLAY "- EN ARCH.CLAVES - LO CREA ? [ ]"
+                  LINE 25 POSITION 11 REVERSE.
+       OPCION-CLAVES.
+           ACCEPT COD1 LINE 25 POSITION 41 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT CLAVES
+                                       CLOSE CLAVES
+                                       OPEN I-O CLAVES
+                                       GO TO FIN-CLAVES.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPCION-CLAVES.
+       FIN-CLAVES.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (ERRORES)
+      * NOMBRE RUTINA: EMPRE.ERR
+      * VERSION: 001   FECHA: ENE'93
+      *=================================================
+
+

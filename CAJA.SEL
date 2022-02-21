@@ -1,0 +1,16 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE CAJA
+      *------------------------------------------------
+              SELECT CAJA
+              ASSIGN TO RANDOM "CAJA"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-CAJA
+              ALTERNATE RECORD KEY IS CLAVE-2-CAJA WITH DUPLICATES
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (CAJA)
+      * NOMBRE SELECT: OPERA.SEL
+      * VERSION: 001   FECHA: OCT'91
+      *===============================================
+

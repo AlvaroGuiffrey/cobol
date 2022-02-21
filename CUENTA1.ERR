@@ -1,0 +1,32 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE CUENTA1
+      *-----------------------------------------------
+       I-O-CUENTA1 SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON CUENTAS-1.
+       I-O-CREACTA1.
+           MOVE SPACES TO MEN-1 MEN-2 MEN-3 MEN-4 MEN-5.
+           PERFORM MENS-PAN.
+           DISPLAY " ERROR -" LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 9 REVERSE.
+           DISPLAY "- EN ARCH.CUENTA1-LO CREA ?  [ ]"
+                  LINE 25 POSITION 11 REVERSE.
+       OPC-CUENTA1.
+           ACCEPT COD1 LINE 25 POSITION 41 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT CUENTAS-1
+                                       CLOSE CUENTAS-1
+                                       OPEN I-O CUENTAS-1
+                                       GO TO FIN-CUENTA1.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPC-CUENTA1.
+       FIN-CUENTA1.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (ERRORES)
+      * NOMBRE RUTINA: CUENTA1.ERR
+      * VERSION: 001   FECHA: SET'90
+      *=================================================
+
+
+

@@ -1,0 +1,15 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE MAYORES
+      *-----------------------------------------------
+              SELECT MAYOR
+              ASSIGN TO RANDOM "MAYOR"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-MAY
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -CONTABILIDAD GENERAL- 
+      * NOMBRE SELECT: MAY.SEL
+      * VERSION: 001   FECHA: ENE'91
+      *===============================================
+

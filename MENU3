@@ -1,0 +1,23 @@
+
+           <<<<< SISTEMA DE ADMINISTRACION Y GESTION  >>>>>
+                 ~~~~~~~ ~~ ~~~~~~~~~~~~~~ ~ ~~~~~~~
+                 E S T U D I O  Computaci¢n
+                 ~~~~~~~~~~~~~  ~~~~~~~~~~~
+
+       301 - Mant.Marcas                  316 - List.Precios
+       302 - Mant.Articulos               317 - List.Stock Valorizado 
+       303 - Mant.Lineas                  318 - List.Stock Min.Valorizdo
+       304 - Mant.Envases                 319 - List.Caja P/Turno 
+       305 - Mant.Art.Compras             320 - List.Venta P/Turno
+       306 - Mant.Art.Ventas              321 - List.Venta Total P/Mes
+       307 - Mant.Tarjetas Credito        322 
+       308 - Mant.Condiciones Venta       323 
+       309 - Mant.Registro de caja        324 
+       310 - Mant.y Modif.Stock           325 
+       311 - Mant.Moneda (U$S)            326 
+       312 - Modif.Precios P/Lineas       327 - FACTURACION 
+       313 - Modif.Precios S/Costos       328 
+       314 - Consulta y List.Estadistica -329 - Modif.de Comprobantes - - - 
+       315 -                              < MENU > - RETORNA MENU PRICIPAL >
+                                                     ~~~~~~~ ~~~~ ~~~~~~~~
+        Copyrighit (c) 1994 by ESTUDIO Computacion. All rights reserved

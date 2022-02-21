@@ -1,0 +1,16 @@
+       MOVER-LACAJA.
+           MOVE WLAC-RUBRO         TO LAC-RUBRO
+           MOVE WLAC-CUENTA        TO LAC-CUENTA
+           MOVE WLAC-SUB-CTA       TO LAC-SUB-CTA
+           MOVE WLAC-TIPO          TO LAC-TIPO
+           MOVE WLAC-IMPORTE       TO LAC-IMPORTE
+           MOVE WLAC-IMP-CHEQ      TO LAC-IMP-CHEQ
+           MOVE WLAC-TARJ-UTI      TO LAC-TARJ-UTI.
+       LACAJA-MOVER.
+           MOVE LAC-RUBRO          TO WLAC-RUBRO
+           MOVE LAC-CUENTA         TO WLAC-CUENTA
+           MOVE LAC-SUB-CTA        TO WLAC-SUB-CTA
+           MOVE LAC-TIPO           TO WLAC-TIPO
+           MOVE LAC-IMPORTE        TO WLAC-IMPORTE
+           MOVE LAC-IMP-CHEQ       TO WLAC-IMP-CHEQ
+           MOVE LAC-TARJ-UTI       TO WLAC-TARJ-UTI.

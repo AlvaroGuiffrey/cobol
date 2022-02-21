@@ -1,0 +1,16 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE MARCAS
+      *-----------------------------------------------
+              SELECT MARCAS;
+              ASSIGN TO RANDOM "MARCAS"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-MARCAS
+              ALTERNATE RECORD KEY IS DET-MAR WITH DUPLICATES
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (STOCK)
+      * NOMBRE SELECT: MARCAS.SEL
+      * VERSION: 001   FECHA: JUL'90
+      *===============================================
+

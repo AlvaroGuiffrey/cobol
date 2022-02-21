@@ -1,0 +1,29 @@
+       MOVER-MANEJO.
+           MOVE WMA-CCT          TO MA-CCT
+           MOVE WMA-PEND         TO MA-PEND
+           MOVE WMA-IVA          TO MA-IVA
+           MOVE WMA-CAJA         TO MA-CAJA
+           MOVE WMA-REM          TO MA-REM
+           MOVE WMA-PAGARE       TO MA-PAGARE
+           MOVE WMA-ESTADIS      TO MA-ESTADIS
+           MOVE WMA-IMPUE        TO MA-IMPUE
+           MOVE WMA-STOCK        TO MA-STOCK.
+           MOVE WMA-FACTURA-A    TO MA-FACTURA-A.
+           MOVE WMA-FACTURA-B    TO MA-FACTURA-B.
+           MOVE WMA-IMP-PAGARE   TO MA-IMP-PAGARE.
+           MOVE WMA-RUBRO-CC     TO MA-RUBRO-CC.
+       
+       MANEJO-MOVER.
+           MOVE MA-CCT           TO WMA-CCT
+           MOVE MA-PEND          TO WMA-PEND
+           MOVE MA-IVA           TO WMA-IVA
+           MOVE MA-CAJA          TO WMA-CAJA
+           MOVE MA-REM           TO WMA-REM
+           MOVE MA-PAGARE        TO WMA-PAGARE
+           MOVE MA-ESTADIS       TO WMA-ESTADIS
+           MOVE MA-IMPUE         TO WMA-IMPUE
+           MOVE MA-STOCK         TO WMA-STOCK.
+           MOVE MA-FACTURA-A     TO WMA-FACTURA-A.
+           MOVE MA-FACTURA-B     TO WMA-FACTURA-B.
+           MOVE MA-IMP-PAGARE    TO WMA-IMP-PAGARE.
+           MOVE MA-RUBRO-CC      TO WMA-RUBRO-CC.

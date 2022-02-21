@@ -1,0 +1,24 @@
+       01  WREG-LACAJA.
+           03  WCLAVE-LACAJA.
+               05  WLAC-EMP            PIC 9(4).
+               05  WLAC-SUC            PIC 99.
+               05  WLAC-TURNO          PIC 9.
+               05  WLAC-FECHA.
+                   07  WLAC-DIA        PIC 99.
+                   07  WLAC-MES        PIC 99.
+                   07  WLAC-ANO        PIC 99.
+               05  WLAC-CONDI          PIC 99.
+                   88  WLAC-CONTADO    VALUE 1.
+                   88  WLAC-COBROS     VALUE 9.
+               05  WLAC-COMPROB        PIC 9(6).
+           03  WLAC-RUBRO              PIC 9(7).
+           03  WLAC-CUENTA             PIC 9(6).
+           03  WLAC-SUB-CTA         PIC 9(4).
+           03  WLAC-TIPO               PIC X.
+               88  WLAC-EFECTIVO       VALUE "E".
+               88  WLAC-CHEQUE         VALUE "C".
+               88  WLAC-TARJETA        VALUE "T".
+               88  WLAC-OTROS          VALUE "O".
+           03  WLAC-IMPORTE            PIC 9(12)V99.
+           03  WLAC-IMP-CHEQ         PIC 9(12)V99.
+           03  WLAC-TARJ-UTI           PIC 99.  

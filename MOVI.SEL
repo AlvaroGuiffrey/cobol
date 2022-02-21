@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE MOVIMIENTOS EN CTA CTE.
+      *------------------------------------------------
+              SELECT MOVI
+                  ASSIGN TO RANDOM "MOVI"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-MOV
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (CUENTAS CTES)
+      * NOMBRE SELECT: OPERA.SEL
+      * VERSION: 001   FECHA: OCT'91
+      *===============================================
+

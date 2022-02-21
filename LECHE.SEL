@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE RECEP. LECHE
+      *------------------------------------------------
+              SELECT LECHE;
+                    ASSIGN TO RANDOM "LECHE"
+                    ORGANIZATION IS INDEXED
+                    ACCESS MODE IS DYNAMIC
+                    RECORD KEY IS CLAVE-LEC
+                    FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- 
+      * NOMBRE SELECT: LECHE.SEL
+      * VERSION: 001   FECHA: FEB'94
+      *===============================================
+

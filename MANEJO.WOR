@@ -1,0 +1,18 @@
+       01  WREG-MANEJO.
+           03  WCLAVE-MANEJO.
+               05  WMA-EMP        PIC 9(4).
+               05  WMA-SUC        PIC 99.
+           03  WMA-CCT            PIC X.
+           03  WMA-PEND           PIC X.
+           03  WMA-IVA            PIC X.              
+           03  WMA-CAJA           PIC X.
+           03  WMA-REM            PIC X.    
+           03  WMA-PAGARE         PIC X.
+           03  WMA-ESTADIS        PIC X.
+           03  WMA-IMPUE          PIC X.
+           03  WMA-STOCK          PIC X.
+           03  WMA-FACTURA-A      PIC X(4).
+           03  WMA-FACTURA-B      PIC X(4).
+           03  WMA-IMP-PAGARE     PIC X(4).
+           03  WMA-RUBRO-CC       PIC 9(4).
+

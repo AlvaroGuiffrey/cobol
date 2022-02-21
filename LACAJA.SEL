@@ -1,0 +1,14 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE LACAJA
+      *-----------------------------------------------
+              SELECT LACAJA;
+              ASSIGN TO RANDOM "LACAJA"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-LACAJA
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -FACTURACION- 
+      * NOMBRE SELECT: LACAJA.SEL
+      * VERSION: 001   FECHA: ABR'94
+      *===============================================

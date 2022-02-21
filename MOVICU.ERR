@@ -1,0 +1,30 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE MOVICU
+      *-----------------------------------------------
+       I-O-MOVICU  SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON MOVICU.
+       I-O-CREAMOVICU.
+           DISPLAY " SE PRODUCE ERROR " LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 22 REVERSE.
+           DISPLAY " EN ARCH. MOVICU. - LO CREO? [ ]"
+                  LINE 25 POSITION 24 REVERSE.
+       OPCION-MOVICU.
+           ACCEPT COD1 LINE 25 POSITION 54 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT MOVICU
+                                       CLOSE MOVICU
+                                       OPEN I-O MOVICU
+                                       GO TO FIN-MOVICU.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPCION-MOVICU.
+       FIN-MOVICU.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -CONTROL DE GESTION - (ERRORES)
+      * NOMBRE RUTINA: MOVICU.ERR
+      * VERSION: 001   FECHA: ABR'91
+      *=================================================
+
+
+

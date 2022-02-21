@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE MONEDAS
+      *------------------------------------------------
+              SELECT MONEDAS
+              ASSIGN TO RANDOM "MONEDAS"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-MON
+              FILE STATUS IS ERRORES.
+      *------------------------------------------------
+      * SISTEMA: -CONTABILIDAD GENERAL-
+      * NOMBRE SELECT: MONE.SEL
+      * VERSION: 001   FECHA: OCT'90
+      *================================================
+

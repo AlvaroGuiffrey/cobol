@@ -1,0 +1,13 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE MANEJO
+      *-----------------------------------------------
+           SELECT MANEJO;
+                  ASSIGN TO RANDOM "MANEJO"
+                  ORGANIZATION IS INDEXED
+                  ACCESS MODE IS DYNAMIC
+                  RECORD KEY IS CLAVE-MANEJO.
+      *-----------------------------------------------
+      * NOMBRE SELECT: MANEJO.SEL
+      * VERSION: 001   FECHA: 10/94.
+      *===============================================
+

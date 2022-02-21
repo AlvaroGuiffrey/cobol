@@ -1,0 +1,16 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE LOCALIDADES
+      *-----------------------------------------------
+              SELECT LOCAL;
+              ASSIGN TO RANDOM "LOCAL"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-LOCAL
+              ALTERNATE RECORD KEY IS NOM-LOCAL WITH DUPLICATES
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- 
+      * NOMBRE SELECT: LOCA.SEL
+      * VERSION: 001   FECHA: JUL'90
+      *===============================================
+

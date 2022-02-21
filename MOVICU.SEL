@@ -1,0 +1,15 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE MOVIMIENTO DE CUBIERTAS
+      *-----------------------------------------------
+              SELECT MOVICU;
+              ASSIGN TO RANDOM "MOVICU"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-MCU
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -CONTROL DE GESTION- 
+      * NOMBRE SELECT: MOVICU.SEL
+      * VERSION: 001   FECHA: ABR'91
+      *===============================================
+

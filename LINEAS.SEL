@@ -1,0 +1,16 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE LINEAS
+      *-----------------------------------------------
+              SELECT LINEAS;
+              ASSIGN TO RANDOM "LINEAS"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-LINEAS
+              ALTERNATE RECORD KEY IS DET-LIN WITH DUPLICATES
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (STOCK)
+      * NOMBRE SELECT: LINEAS.SEL
+      * VERSION: 001   FECHA: JUL'90
+      *===============================================
+

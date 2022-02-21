@@ -1,0 +1,30 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE IMPUESTOS
+      *-----------------------------------------------
+       I-O-IMPU  SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON IMPU.
+       I-O-CREAIMPU.
+           DISPLAY " SE PRODUCE ERROR " LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 22 REVERSE.
+           DISPLAY " EN ARCH. IMPU    - LO CREO? [ ]"
+                  LINE 25 POSITION 24 REVERSE.
+       OPCION-IMPU.
+           ACCEPT COD1 LINE 25 POSITION 54 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT IMPU
+                                       CLOSE IMPU
+                                       OPEN I-O IMPU
+                                       GO TO FIN-IMPU.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPCION-IMPU.
+       FIN-IMPU.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (ERRORES)
+      * NOMBRE RUTINA: IMPU.ERR
+      * VERSION: 001   FECHA: OCT'92
+      *=================================================
+
+
+

@@ -1,0 +1,16 @@
+       01 REG-WIMP.
+          03 CLAVE-WIMP.
+             05 EMP        PIC 9999.
+             05 SUC        PIC 99.
+             05 IMP        PIC 9.
+             05 ACT        PIC 999.
+             05 FEC.
+                07 DD      PIC 99.
+                07 MM      PIC 99.
+                07 AA      PIC 99.
+             05 COMPRO     PIC 9(6).
+      *-------------------------------------------------
+          03 NET           PIC S9(12)V99.
+          03 CAL           PIC 9.
+          03 POR           PIC 99V999.
+          03 MIN           PIC 9(10)V99.

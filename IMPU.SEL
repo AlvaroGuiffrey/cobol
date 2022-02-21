@@ -1,0 +1,15 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE IMPUESTOS
+      *-----------------------------------------------
+              SELECT IMPU;
+              ASSIGN TO RANDOM "IMPU"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-IMPU
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- 
+      * NOMBRE SELECT: IMPU.SEL
+      * VERSION: 001   FECHA: OCT'92
+      *===============================================
+

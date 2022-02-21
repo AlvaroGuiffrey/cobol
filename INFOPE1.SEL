@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE INFORME DE OPERACIONES CON ARTIC.
+      *------------------------------------------------
+              SELECT INFOPE1
+              ASSIGN TO RANDOM "INFOPE1"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-INFOPE1
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (OPERACIONES)
+      * NOMBRE SELECT: INFOPE1.SEL
+      * VERSION: 001   FECHA: JUL'90
+      *===============================================
+

@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE INSUMOS DIRECTOS DGR
+      *------------------------------------------------
+              SELECT INSDIR;
+                    ASSIGN TO RANDOM "INSDIR"
+                    ORGANIZATION IS INDEXED
+                    ACCESS MODE IS DYNAMIC
+                    RECORD KEY IS CLAVE-INS
+                    FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (IVA)
+      * NOMBRE SELECT: INSDIR.SEL
+      * VERSION: 001   FECHA: ENE'94
+      *===============================================
+

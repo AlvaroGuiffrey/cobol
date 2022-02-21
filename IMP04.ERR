@@ -1,0 +1,29 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE IMPRESION 128 COL
+      *-----------------------------------------------
+       I-O-IMP04 SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON IMP03.
+       I-O-CREAIMP04.
+           MOVE SPACES TO MEN-1 MEN-2 MEN-3 MEN-4 MEN-5.
+           PERFORM MENS-PAN.
+           DISPLAY " ERROR -" LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 9 REVERSE.
+           DISPLAY "- EN IMPRESION.- CONTINUA ?  [ ]"
+                  LINE 25 POSITION 11 REVERSE.
+           DISPLAY " ** CONECTE IMPRESORA ** " LINE 25 POSITION 43
+                                 REVERSE BLINK.
+       OPCION-IMP04.
+           ACCEPT COD1 LINE 25 POSITION 41 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" GO TO FIN-IMP04.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPCION-IMP03.
+       FIN-IMP04.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (ERRORES)
+      * NOMBRE RUTINA: IMP04.ERR
+      * VERSION: 001   FECHA: JUL'90
+      *=================================================
+

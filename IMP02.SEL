@@ -1,0 +1,12 @@
+      *=================================================
+      * SELECT DEL ARCHIVO DE IMPRESION DE 132 COLUMNAS
+      *-------------------------------------------------
+              SELECT IMP02
+              ASSIGN TO PRINT "PRINTER"
+      *        ASSIGN TO PRINT "PEPE"
+              FILE STATUS IS ERRORES.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (IMPRESION)
+      * NOMBRE SELECT: IMP02.SEL
+      * VERSION: 001    FECHA: JUL'90
+      *=================================================

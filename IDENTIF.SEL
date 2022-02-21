@@ -1,0 +1,16 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE IDENTIF
+      *-----------------------------------------------
+              SELECT IDENTIF;
+              ASSIGN TO RANDOM "IDENTIF"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-IDENTIF
+              ALTERNATE RECORD KEY IS NOMBRE-IDE WITH DUPLICATES
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -ADM. MUNICIPAL- 
+      * NOMBRE SELECT: NUMERO.SEL
+      * VERSION: 001   FECHA: MAY'91
+      *===============================================
+

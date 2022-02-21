@@ -1,0 +1,32 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE IVA
+      *-----------------------------------------------
+       I-O-IVA SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON IVA.
+       I-O-CREAIVA.
+           MOVE SPACES TO MEN-1 MEN-2 MEN-3 MEN-4 MEN-5.
+           PERFORM MENS-PAN.
+           DISPLAY " ERROR -" LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 9 REVERSE.
+           DISPLAY "- EN ARCH.IVA   - LO CREA ?  [ ]"
+                  LINE 25 POSITION 11 REVERSE.
+       OPC-IVA.
+           ACCEPT COD1 LINE 25 POSITION 41 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT IVA
+                                       CLOSE IVA
+                                       OPEN I-O IVA
+                                       GO TO FIN-IVA.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPC-IVA.
+       FIN-IVA.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (ERRORES)
+      * NOMBRE RUTINA: IVA.ERR
+      * VERSION: 001   FECHA: DIC'91
+      *=================================================
+
+
+

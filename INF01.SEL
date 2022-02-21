@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE INFORME VENTA DGR
+      *------------------------------------------------
+              SELECT INF01;
+                    ASSIGN TO RANDOM "INF01"
+                    ORGANIZATION IS INDEXED
+                    ACCESS MODE IS DYNAMIC
+                    RECORD KEY IS CLAVE-INF01
+                    FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (INFORME DGR)
+      * NOMBRE SELECT: INF01.SEL
+      * VERSION: 001   FECHA: AGO'93
+      *===============================================
+

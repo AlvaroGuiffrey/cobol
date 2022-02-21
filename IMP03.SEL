@@ -1,0 +1,12 @@
+      *=================================================
+      * SELECT DEL ARCHIVO DE IMPRESION DE 35 COLUMNAS
+      *-------------------------------------------------
+              SELECT IMP03
+              ASSIGN TO PRINT "PRINTER"
+              FILE STATUS IS ERRORES.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (IMPRESION)
+      * NOMBRE SELECT: IMP03.SEL
+      * VERSION: 001    FECHA: DIC'90
+      *=================================================
+

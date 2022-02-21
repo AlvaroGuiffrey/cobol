@@ -1,0 +1,7 @@
+      *==============================================
+      * SELECT DEL ARCHIVO DE IMP-132
+      *-----------------------------------------------
+           SELECT IMP-132;
+                  ASSIGN TO PRINT "PRINTER"
+      *            ASSIGN TO PRINT "PEPE"
+                  FILE STATUS IS ERRORES.

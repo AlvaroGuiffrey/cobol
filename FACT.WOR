@@ -1,0 +1,21 @@
+       01  WREG-FACTURAS.
+           03  WCLAVE-FACTURAS.
+               05  WFA-EMP          PIC 9(4).
+               05  WFA-SUC          PIC 99.
+               05  WFA-CUENTA       PIC 9(6).
+               05  WFA-NRO-FACTURA  PIC 9(8).
+           03  WFA-CLAVE-NRO-FACT.
+               05  WFA-NUM-FACTURA  PIC 9(8).
+           03  WFA-FECHA-FAC.
+               05  WFA-DIA-FAC      PIC 99.
+               05  WFA-MES-FAC      PIC 99.
+               05  WFA-ANO-FAC      PIC 99.
+           03  WFA-FECHA-VEN.
+               05  WFA-DIA-VEN      PIC 99.
+               05  WFA-MES-VEN      PIC 99.
+               05  WFA-ANO-VEN      PIC 99.
+           03  WFA-TOTAL-FAC        PIC 9(8)V99.           
+           03  WFA-TOTAL-IVA18      PIC 9(8)V99.
+           03  WFA-TOTAL-IVA9       PIC 9(8)V99.
+           03  WFA-EST-FACTURA      PIC 9.
+

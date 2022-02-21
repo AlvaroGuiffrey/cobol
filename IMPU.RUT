@@ -1,0 +1,10 @@
+       MOVER-IMPU.
+           MOVE NET        TO NET-IMP   
+           MOVE CAL        TO CAL-IMP
+           MOVE POR        TO POR-IMP
+           MOVE MIN        TO MIN-IMP.
+       IMPU-MOVER.
+           MOVE NET-IMP    TO NET   
+           MOVE CAL-IMP    TO CAL
+           MOVE POR-IMP    TO POR
+           MOVE MIN-IMP    TO MIN.

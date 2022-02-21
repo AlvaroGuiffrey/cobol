@@ -1,0 +1,30 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE INFORMACION DE OPERACIONES
+      *-----------------------------------------------
+       I-O-INFOPE1  SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON INFOPE1.
+       I-O-CREAIO1.
+           DISPLAY " SE PRODUCE ERROR " LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 22 REVERSE.
+           DISPLAY " EN ARCH.INFOPE1. - LO CREO? [ ]"
+                  LINE 25 POSITION 24 REVERSE.
+       OPCION-IO1.
+           ACCEPT COD1 LINE 25 POSITION 54 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT INFOPE1
+                                       CLOSE INFOPE1
+                                       OPEN I-O INFOPE1
+                                       GO TO FIN-IO1.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPCION-IO1.
+       FIN-IO1.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (ERRORES)
+      * NOMBRE RUTINA: INFOPE1.ERR
+      * VERSION: 001   FECHA: JUL'90
+      *=================================================
+
+
+

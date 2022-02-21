@@ -1,0 +1,24 @@
+       MOVER-FACTURAS.
+           MOVE WFA-ANO-FAC         TO FA-ANO-FAC.
+           MOVE WFA-MES-FAC         TO FA-MES-FAC.
+           MOVE WFA-DIA-FAC         TO FA-DIA-FAC.
+           MOVE WFA-ANO-VEN         TO FA-ANO-VEN.
+           MOVE WFA-MES-VEN         TO FA-MES-VEN.
+           MOVE WFA-DIA-VEN         TO FA-DIA-VEN.
+           MOVE WFA-TOTAL-FAC       TO FA-TOTAL-FAC.
+           MOVE WFA-TOTAL-IVA18     TO FA-TOTAL-IVA18.
+           MOVE WFA-TOTAL-IVA9      TO FA-TOTAL-IVA9.
+           MOVE WFA-EST-FACTURA     TO FA-EST-FACTURA.
+       FACTURAS-MOVER.
+           MOVE FA-ANO-FAC          TO WFA-ANO-FAC.
+           MOVE FA-MES-FAC          TO WFA-MES-FAC.
+           MOVE FA-DIA-FAC          TO WFA-DIA-FAC.
+           MOVE FA-ANO-VEN          TO WFA-ANO-VEN.
+           MOVE FA-MES-VEN          TO WFA-MES-VEN.
+           MOVE FA-DIA-VEN          TO WFA-DIA-VEN.
+           MOVE FA-TOTAL-FAC        TO WFA-TOTAL-FAC.
+           MOVE FA-TOTAL-IVA18      TO WFA-TOTAL-IVA18.
+           MOVE FA-TOTAL-IVA9       TO WFA-TOTAL-IVA9.
+           MOVE FA-EST-FACTURA      TO WFA-EST-FACTURA.
+
+

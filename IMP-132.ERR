@@ -1,0 +1,31 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE IMP-132
+      *-----------------------------------------------
+       I-O-IMP-132 SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON IMP-132.
+       I-O-CREAIMP-132.
+           DISPLAY SPACES LINE 25 POSITION 1 SIZE 80.
+           DISPLAY " ERROR -" LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 9 REVERSE.
+           DISPLAY "- IMPRESORA - CONTINUA ? "
+                  LINE 25 POSITION 11 REVERSE.
+       OPCION-IMP-132.
+           ACCEPT COD1 LINE 25 POSITION 41 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" 
+      *                                  CLOSE IMP-132
+      *                                  OPEN OUTPUT IMP-132
+                                       GO TO FIN-IMP-132.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPCION-IMP-132.
+       FIN-IMP-132.
+           WRITE LINEA AFTER 0
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: CAPTURAS COPROSA
+      * NOMBRE RUTINA: IMP-132.ERR
+      * VERSION: 001   FECHA: 01/94
+      *=================================================
+
+

@@ -1,0 +1,12 @@
+      *=================================================
+      * SELECT DEL ARCHIVO DE IMPRESION DE 128 COLUMNAS
+      *-------------------------------------------------
+              SELECT IMP04
+              ASSIGN TO PRINT "PRINTER"
+              FILE STATUS IS ERRORES.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (IMPRESION)
+      * NOMBRE SELECT: IMP04.SEL
+      * VERSION: 001    FECHA: DIC'90
+      *=================================================
+

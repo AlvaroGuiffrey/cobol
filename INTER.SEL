@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE IMPUESTO INTERNO
+      *------------------------------------------------
+              SELECT INTER
+                  ASSIGN TO RANDOM "INTER"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-INTER
+              FILE STATUS IS ERRORES.
+      *------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (IVA)
+      * NOMBRE SELECT: INTER.SEL
+      * VERSION: 001   FECHA: DIC'92
+      *================================================
+

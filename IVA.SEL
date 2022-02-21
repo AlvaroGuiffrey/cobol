@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE IVA
+      *------------------------------------------------
+              SELECT IVA;
+                    ASSIGN TO RANDOM "IVA"
+                    ORGANIZATION IS INDEXED
+                    ACCESS MODE IS DYNAMIC
+                    RECORD KEY IS CLAVE-IVA
+                    FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (IVA)
+      * NOMBRE SELECT: IVA.SEL
+      * VERSION: 001   FECHA: OCT'91
+      *===============================================
+

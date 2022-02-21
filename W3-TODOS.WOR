@@ -1,0 +1,30 @@
+
+          
+      *   AYU3.WOR   PARA BICHO    
+      **=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--==--=-=-=-=-=-=-=
+      * PARA VIOLLAZ - SOTELO
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+       01 VECTOR.
+          02 ART-VEC         PIC 9(10) OCCURS 40.
+          02 N-ART-VEC       PIC X(30) OCCURS 40.
+          02 ENV-VEC         PIC X(20) OCCURS 40.
+          02 N-MAR-VEC       PIC X(20) OCCURS 40.
+          02 UNI-S-VEC       PIC 9(6)V999 OCCURS 40.
+          02 UNI-VEC         PIC 9(6)V999 OCCURS 40.
+          02 UNI-V-VEC       PIC 9(6)V999 OCCURS 40.
+          02 CANT1-VEC       PIC 9(6)V999 OCCURS 40.
+          02 FRA-VEC         PIC X OCCURS 40.
+          02 T-UNI-VEC       PIC 9 OCCURS 40.
+          02 PRE-VEC         PIC 9(10)V99 OCCURS 40.
+          02 D-R-VEC         PIC 9(10)V99 OCCURS 40.
+          02 IMP-VEC         PIC 9(10)V99 OCCURS 40.
+          02 COS-VEC         PIC 9(10)V99 OCCURS 40.
+          02 II-VEC          PIC 9(10)V99 OCCURS 40.
+          02 DET-VEC         PIC X(20) OCCURS 40.
+          02 REP-VEC         PIC 9 OCCURS 40.
+          02 LIN-1-VEC       PIC 999 OCCURS 40.
+          02 ALI-VEC         PIC 99V99 OCCURS 40.
+          02 ACT-MUN-VEC     PIC 999 OCCURS 40.
+          02 ACT-PRO-VEC     PIC 999 OCCURS 40.
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+

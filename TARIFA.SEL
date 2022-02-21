@@ -1,0 +1,15 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE TARIFA
+      *-----------------------------------------------
+              SELECT TARIFA;
+              ASSIGN TO RANDOM "TARIFA"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-TARIFA
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -ADM. MUNICIPAL- 
+      * NOMBRE SELECT: TARIFA.SEL
+      * VERSION: 001   FECHA: MAY'91
+      *===============================================
+

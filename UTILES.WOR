@@ -1,0 +1,79 @@
+      *****************************************************
+      * LOS CAMPOS CON X DELANTE SON PARA CONTROLAR FECHA *
+      *****************************************************
+
+       77  XRESTO-1          PIC 999.
+       77  XCOCIENTE-1       PIC 999.
+       77  XRESTO-2          PIC 999.
+       77  XCOCIENTE-2       PIC 999.
+       77  XRESTO-3          PIC 999.
+       77  XCOCIENTE-3       PIC 999.
+       77  XFECHA-CORRECTA   PIC XX.
+       77  XDIAS-MES          PIC 99.
+       77  XCTE              PIC 9(4) VALUE 1900.
+       01  XFECHA.
+           02  XANNO         PIC 99.
+           02  XMES          PIC 99.
+           02  XDIA          PIC 99.
+       01  XFECHA-HOY.
+           03  XDD           PIC 99.
+           03  FILLER       PIC X VALUE "/".
+           03  XMM           PIC 99.
+           03  FILLER       PIC X VALUE "/".
+           03  XAA           PIC 9(4).
+
+       01  UTILES-VARIOS.
+           03  LAS-FECHAS.
+               05  DF                  PIC 9(8).
+               05  R-DF REDEFINES DF.
+                   07  D-D             PIC 99.
+                   07  D-M             PIC 99.
+                   07  D-A             PIC 9999.
+               05  HF                  PIC 9(8).
+               05  R-HF REDEFINES HF.
+                   07  H-D             PIC 99.
+                   07  H-M             PIC 99.
+                   07  H-A             PIC 9999.
+               05  DESDE               PIC 9(6) VALUE 0.
+               05  HASTA               PIC 9(6) VALUE 0.
+               05  ESTA                PIC 9(6) VALUE 0.
+               05  FECHA-SIS           PIC 9(6) VALUE 0.
+               05  R-FECHA-SIS REDEFINES FECHA-SIS.
+                   07  ANO-SIS         PIC 99.
+                   07  MES-SIS         PIC 99.
+                   07  DIA-SIS         PIC 99.      
+               05  FECHA-SIS-ED.
+                   07  DIA-SIS-ED      PIC ZZ/.
+                   07  MES-SIS-ED      PIC ZZ/.
+                   07  ANO-SIS-ED      PIC ZZ.
+           03  CONTADORES-DE-RENGLONES.
+               05  CONT-RENG                     PIC 9(6) VALUE 0.      
+               05  LIN                           PIC 99 VALUE 0. 
+               05  L1                            PIC 99 VALUE 0.
+               05  CORTA                         PIC 9 VALUE 0.
+               05  LINEA-PANTALLA                PIC X(79).
+               05  I                             PIC 99 VALUE 0.
+               05  RAYA                          PIC X(79) 
+                                    VALUE ALL "Í".
+               05  DED                           PIC X.
+               05  QQ                            PIC X.
+               05  VALIDO                        PIC 9 VALUE 0.
+       01   CONDI                 PIC 9(3) COMP.
+            88  ESCAPE-X       VALUE 027.
+            88  EFE01        VALUE 01.
+            88  EFE02        VALUE 02.
+            88  EFE03        VALUE 03.
+            88  EFE04        VALUE 04.
+            88  EFE05        VALUE 05.
+            88  EFE06        VALUE 06.
+            88  EFE07        VALUE 07.
+            88  EFE08        VALUE 08.
+            88  EFE09        VALUE 09.
+            88  EFE10        VALUE 10.
+            88  FLE1         VALUE 052.
+            88  FLE2         VALUE 053.
+       01  SW1                    PIC 9.      
+       01  ERRORES                PIC XX.
+       01  COD1                   PIC X.
+
+

@@ -1,0 +1,13 @@
+      *================================================
+      * SELECT DEL ARCHIVO VENTURNO
+      *------------------------------------------------
+              SELECT VENTURNO
+              ASSIGN TO RANDOM "VENTURNO"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-VENTURNO.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- 
+      * NOMBRE SELECT.: VENTURNO.SEL
+      * VERSION: 001   FECHA: FEB'94
+      *=================================================

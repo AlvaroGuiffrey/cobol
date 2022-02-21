@@ -1,0 +1,14 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE TARJETAS
+      *-----------------------------------------------
+           SELECT TARJ;
+                  ASSIGN TO RANDOM "TARJ"
+                  ORGANIZATION IS INDEXED
+                  ACCESS MODE IS DYNAMIC
+                  RECORD KEY IS CLAVE-TARJ.
+      *-----------------------------------------------
+      * SISTEMA: -ADMINISTRACION DE VENDEDOR.
+      * NOMBRE SELECT: TARJ.SEL
+      * VERSION: 001   FECHA: 12/93.
+      *===============================================
+

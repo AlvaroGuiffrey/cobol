@@ -1,0 +1,87 @@
+      *======================================================
+      * CAMPOS AUXILIARES VARIOS
+      *------------------------------------------------------
+       01 EXCEP         PIC 9(3) COMP.
+          88 ESCAP VALUE IS 027.
+          88 F01   VALUE IS 001.
+          88 F02   VALUE IS 002.
+          88 F03   VALUE IS 003.
+          88 F04   VALUE IS 004.
+          88 F05   VALUE IS 005.
+          88 F06   VALUE IS 006.
+          88 F07   VALUE IS 007.
+          88 F08   VALUE IS 008.
+          88 F09   VALUE IS 009.
+          88 F10   VALUE IS 010.
+          88 C-Y   VALUE IS 025.
+          88 C-N   VALUE IS 014.
+          88 C-Z   VALUE IS 026.
+          88 C-K   VALUE IS 011.
+          88 C-L   VALUE IS 012.
+       77 ERRORES        PIC X(2).
+       77 NOM-PAN        PIC X(12).
+       77 CLV-PAN        PIC 9(1) VALUE 1.
+       77 OPCION         PIC 9(1).
+       77 SW1            PIC 99 VALUE 0.
+       77 SW2            PIC 99 VALUE 0.
+       77 SW3            PIC 99 VALUE 0.
+       77 COD1           PIC X VALUE SPACES.
+       77 COD2           PIC X VALUE SPACES.
+       77 COD3           PIC X VALUE SPACES.
+       01 FECHA.
+          03 ANO         PIC 99.
+          03 MES         PIC 99.
+          03 DIA         PIC 99.
+       01 TIEMPO.
+          03 HORA        PIC 99.
+          03 MINU        PIC 99.
+          03 SEGU        PIC 99.
+          03 DECI        PIC 99.
+       01 TITULO-PAN.
+          03 TIT-1-PAN    PIC X(10).
+          03 TIT-2-PAN    PIC X(10).
+          03 TIT-3-PAN    PIC X(10).
+       01 MENSAJE.
+          03 MEN-1        PIC X(15).
+          03 MEN-2        PIC X(15).
+          03 MEN-3        PIC X(15).
+          03 MEN-4        PIC X(15).
+          03 MEN-5        PIC X(15).
+       01 TITULO-EDI.
+          03 TIT-1-EDI    PIC X(10).
+          03 TIT-2-EDI    PIC X(10).
+          03 TIT-3-EDI    PIC X(10).
+          03 TIT-4-EDI    PIC X(10).
+          03 TIT-5-EDI    PIC X(10).
+          03 TIT-6-EDI    PIC X(10).
+       01 CONT-P         PIC 9999.
+       01 CONT-R         PIC 99.
+       01 CONT-I         PIC 9(6).
+       01 POSICIONES.
+          03 TAB-POS OCCURS 50 TIMES.
+             05 TAB-LIN   PIC 99.
+             05 TAB-COL   PIC 99.
+             05 TAB-SIZ   PIC 99.
+       01 CAPTURA.
+          03 EMP-CAP      PIC 9(2).
+          03 SUC-CAP      PIC 9(2).
+          03 MAR-CAP      PIC 9(10).
+          03 NUM-CAP      PIC 9(10).
+          03 DEC10-CAP    PIC 9(10)V99.
+          03 DEC15-CAP    PIC 9(15)V99.
+          03 DEC6-CAP     PIC 9(6)V99.
+          03 CEN9-CAP     PIC 9(9)V999.
+          03 D20-CAP      PIC X(20).
+          03 ALF-CAP      PIC X(40).
+          03 COD-CAP      PIC XX.
+       01 EDICION.
+          03 NUM-EDI      PIC Z(10).
+          03 DEC10-EDI    PIC ZZZZ.ZZZ.ZZ9,99.
+          03 DEC15-EDI    PIC ZZZZZZ.ZZZ.ZZZ.ZZ9,99.
+          03 DEC6-EDI     PIC ZZZ.ZZ9,99.
+      *------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (AUXILIARES)
+      * DETALLE: VARIOS.WOR     
+      * VERSION: 001      FECHA: JUL'90
+      *================================================
+

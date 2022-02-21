@@ -1,0 +1,30 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE VENTURNO
+      *-----------------------------------------------
+       I-O-VENTURNO SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON VENTURNO.
+       I-O-CREAVENTURNO.
+           DISPLAY SPACES LINE 25 POSITION 1 SIZE 79.
+           DISPLAY " ERROR -" LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 9 REVERSE.
+           DISPLAY "- EN ARCH.VENTURNO - LO CREA ?  [ ]"
+                  LINE 25 POSITION 11 REVERSE.
+       OPC-VENTURNO.
+           ACCEPT COD1 LINE 25 POSITION 41 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT VENTURNO
+                                       CLOSE VENTURNO
+                                       OPEN I-O VENTURNO
+                                       GO TO FIN-VENTURNO.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPC-VENTURNO.
+       FIN-VENTURNO.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (ERRORES)
+      * NOMBRE RUTINA: VENTURNO.ERR
+      * VERSION: 001   FECHA: FEB'94
+      *=================================================
+
+

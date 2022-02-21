@@ -1,0 +1,47 @@
+
+      *      AYU1.WOR PARA BICHO             
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+      * IMPRESION SIPEC - SERGIO GRANTON MOTOS 
+      * IMPRESION IMPRENTA V.ELISA PARA SCARAZZINI
+      * IMPRESION IMPRENTA V.ELISA PARA VIOLLAZ
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           02 TIT0-0.
+              03 FILLER       PIC 99 COMP-4 VALUE 15.
+              03 FILLER       PIC X(74) VALUE SPACES.
+              03 FILLER       PIC 99 COMP-4 VALUE 15.
+              03 FILLER       PIC 99 COMP-4 VALUE 14.
+              03 T-FAC1-ED    PIC X(12).
+              03 FILLER       PIC 99 COMP-4 VALUE 20.
+          02 TIT1-1.
+             03 Z10          PIC 99 COMP-4 VALUE 15.
+             03 Z11          PIC 99 COMP-4 VALUE 14.
+             03 FILLER       PIC X VALUE SPACES.
+             03 NOM1-ED      PIC X(30).
+             03 FILLER       PIC X(2) VALUE " (".
+             03 CTA1-ED      PIC ZZZZZ9 BLANK WHEN ZERO.
+             03 FILLER       PIC X(13) VALUE ")".
+             03 DD1-ED       PIC 99/.
+             03 MM1-ED       PIC 99/.
+             03 FILLER       PIC XX VALUE "19".
+             03 AA1-ED       PIC 99.
+             03 Z12          PIC 99 COMP-4 VALUE 20.
+          02 TIT1-2.
+             03 FILLER       PIC XX VALUE SPACES.
+             03 DOM1-ED      PIC X(40)BB.
+             03 CPOS1-ED     PIC 9999B.
+             03 FILLER        PIC XX VALUE "- ".
+             03 LOC1-ED      PIC X(30).
+          02 TIT1-3.
+            03 FILLER       PIC X(8) VALUE "  CUIT:".
+             03 IGAN1-ED     PIC X(15).
+             03 FILLER       PIC X(2) VALUE SPACES.
+             03 RES1-ED      PIC X(15).
+             03 FILLER       PIC X(14) VALUE "- ING.BRUTOS: ".
+             03 ING-BRUTOS1-ED  PIC X(15).
+             03 FILLER       PIC X(3) VALUE " - ".
+             03 C-ING-BRUTOS1-ED  PIC X(15).
+          02 TIT1-4.
+             03 FILLER       PIC X(8) VALUE "  TEL:".
+             03 TEL1-ED      PIC X(10).
+             03 FILLER       PIC X(82) VALUE SPACES.
+             03 CONDI1-ED    PIC X(20).

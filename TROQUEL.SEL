@@ -1,0 +1,16 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE TROQUEL
+      *-----------------------------------------------
+              SELECT TROQUEL;
+              ASSIGN TO RANDOM "TROQUEL"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-TROQUEL
+              ALTERNATE RECORD KEY IS ART-TRO WITH DUPLICATES
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (STOCK)
+      * NOMBRE SELECT: TROQUEL.SEL
+      * VERSION: 001   FECHA: JUL'90
+      *===============================================
+

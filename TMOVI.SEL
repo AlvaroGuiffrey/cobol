@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE MOVIMIENTOS EN CTA CTE.
+      *------------------------------------------------
+              SELECT TMOVI
+                  ASSIGN TO RANDOM "TMOVI"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-TMOV
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (CUENTAS CTES)
+      * NOMBRE SELECT: TMOVI.SEL
+      * VERSION: 001   FECHA: JUN'97
+      *===============================================
+

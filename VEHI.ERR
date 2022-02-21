@@ -1,0 +1,30 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE VEHICULOS
+      *-----------------------------------------------
+       I-O-VEHI  SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON VEHI.
+       I-O-CREAVEHI.
+           DISPLAY " SE PRODUCE ERROR " LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 22 REVERSE.
+           DISPLAY " EN ARCH. VEHI.   - LO CREO? [ ]"
+                  LINE 25 POSITION 24 REVERSE.
+       OPCION-VEHI.
+           ACCEPT COD1 LINE 25 POSITION 54 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT VEHI
+                                       CLOSE VEHI
+                                       OPEN I-O VEHI
+                                       GO TO FIN-VEHI.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPCION-VEHI.
+       FIN-VEHI.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -CONTROL DE GESTION - (ERRORES)
+      * NOMBRE RUTINA: VEHI.ERR
+      * VERSION: 001   FECHA: MAY'91
+      *=================================================
+
+
+

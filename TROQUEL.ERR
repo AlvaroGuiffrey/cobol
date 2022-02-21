@@ -1,0 +1,32 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE TROQUEL
+      *-----------------------------------------------
+       I-O-TROQUEL SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON TROQUEL.
+       I-O-CREATRO.
+           MOVE SPACES TO MEN-1 MEN-2 MEN-3 MEN-4 MEN-5.
+           PERFORM MENS-PAN.
+           DISPLAY " ERROR -" LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 9 REVERSE.
+           DISPLAY "- EN ARCH.TROQUEL- LO CREA ? [ ]"
+                  LINE 25 POSITION 11 REVERSE.
+       OPC-TROQUEL.
+           ACCEPT COD1 LINE 25 POSITION 41 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT TROQUEL
+                                       CLOSE TROQUEL
+                                       OPEN I-O TROQUEL
+                                       GO TO FIN-TROQUEL.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPC-TROQUEL.
+       FIN-TROQUEL.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (ERRORES)
+      * NOMBRE RUTINA: TROQUEL.ERR
+      * VERSION: 001   FECHA: JUL'90
+      *=================================================
+
+
+

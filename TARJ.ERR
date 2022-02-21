@@ -1,0 +1,31 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE TARJ
+      *-----------------------------------------------
+       I-O-TARJ SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON TARJ.
+       I-O-CREATARJ.
+           DISPLAY SPACES LINE 25 POSITION 1 SIZE 80.
+           DISPLAY " ERROR -" LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 9 REVERSE.
+           DISPLAY "- EN ARCH.TARJ - LO CREA ? [ ]"
+                  LINE 25 POSITION 11 REVERSE.
+       OPCION-TARJ.
+           ACCEPT COD1 LINE 25 POSITION 41 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT TARJ
+                                       CLOSE TARJ
+                                       OPEN I-O TARJ
+                                       GO TO FIN-TARJ.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPCION-TARJ.
+       FIN-TARJ.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -ADMINISTRACION DE SUELDOS - (ERRORES)
+      * NOMBRE RUTINA: TARJ.ERR
+      * VERSION: 001   FECHA: 12/93
+      *=================================================
+
+
+

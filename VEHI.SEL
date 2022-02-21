@@ -1,0 +1,16 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE VEHICULOS
+      *-----------------------------------------------
+              SELECT VEHI;
+              ASSIGN TO RANDOM "VEHI"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-VEHI
+              ALTERNATE RECORD KEY IS UNI-VEH WITH DUPLICATES
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- 
+      * NOMBRE SELECT: VEH.SEL
+      * VERSION: 001   FECHA: MAY'91
+      *===============================================
+

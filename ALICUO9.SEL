@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE ALICUOTAS IVA
+      *------------------------------------------------
+              SELECT ALICUO9
+              ASSIGN TO RANDOM "ALICUO9"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-ALICUO9
+              FILE STATUS IS ERRORES.
+      *------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (IVA)
+      * NOMBRE SELECT: ALICUO.SEL
+      * VERSION: 001   FECHA: OCT'90
+      *================================================
+

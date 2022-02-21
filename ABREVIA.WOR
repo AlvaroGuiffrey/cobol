@@ -1,0 +1,19 @@
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+      * CAMPOS QUE ABREVIAN CODIGOS COMPROBANTES
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+       01 ABREVIA-LAS.
+          03 FILLER      PIC X(15) VALUE "CAJA ".
+          03 FILLER      PIC X(15) VALUE "FACTURA ".
+          03 FILLER      PIC X(15) VALUE "RECIBO ".
+          03 FILLER      PIC X(15) VALUE "N.CREDITO".
+          03 FILLER      PIC X(15) VALUE "N.DEBITO ".
+          03 FILLER      PIC X(15) VALUE "ASTO.DIARIO".
+          03 FILLER      PIC X(15) VALUE "REMITO ".
+          03 FILLER      PIC X(15) VALUE "    ".
+          03 FILLER      PIC X(15) VALUE "OTROS ".
+       01 LAS-ABREVIA REDEFINES ABREVIA-LAS.
+          03 ABREVIA     PIC X(15) OCCURS 9 TIMES.
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+      * NOMBRE: ABREVIA.WOR
+      * VERSION: 001             FECHA: OCT'91
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

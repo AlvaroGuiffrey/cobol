@@ -1,0 +1,4 @@
+       MOVER-BCO.
+           MOVE WBCO-NOMBRE          TO BCO-NOMBRE.
+       BCO-MOVER.
+           MOVE BCO-NOMBRE           TO WBCO-NOMBRE.

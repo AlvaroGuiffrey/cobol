@@ -1,0 +1,16 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE ASIENTOS
+      *------------------------------------------------
+              SELECT ASIENTOS
+              ASSIGN TO RANDOM "ASIENTOS"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-ASIE
+              ALTERNATE RECORD KEY IS CLAVE-2-ASIE WITH DUPLICATES
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -CONTABILIDAD GENERAL- 
+      * NOMBRE SELECT: ASIENTOS.SEL
+      * VERSION: 001   FECHA: OCT'91
+      *===============================================
+

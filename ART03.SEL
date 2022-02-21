@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE ARTICULOS POR DESTINO
+      *------------------------------------------------
+       SELECT ART03 
+              ASSIGN TO RANDOM "A:ART03"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-ART03
+              FILE STATUS IS ERRORES.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (STOCK)
+      * NOMBRE SELECT: ART03.SEL
+      * VERSION: 001   FECHA: ENERO 91
+      *=================================================
+

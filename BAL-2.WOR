@@ -1,0 +1,85 @@
+      *=========================================================
+      * BALANCE SUMAS Y SALDOS -REGISTROS DE IMPRESION
+      *---------------------------------------------------------
+       01 CAMPOS-IMP.
+          02 TIT-1.
+             03 NOM-EMP-ED     PIC X(50).
+             03 FILLER         PIC X(69) VALUE SPACES.
+             03 FILLER         PIC X(10) VALUE "Hoja Nro: ".
+             03 CONT-P-ED      PIC ZZZ.
+          02 TIT-2.
+             03 FILLER         PIC X(14) VALUE "Sucursal Nro: ".
+             03 SUC-ED         PIC Z9B.
+             03 FILLER         PIC XX VALUE "- ".
+             03 NOM-SUC-ED     PIC X(50).
+          02 TIT-21.
+             03 FILLER         PIC X(56) VALUE SPACES.
+             03 FILLER    PIC X(24) VALUE "- CONTABILIDAD CENTRAL -".
+          02 TIT-3.
+             03 FILLER         PIC X(27) VALUE SPACES.
+             03 FILLER  PIC X(25) VALUE "BALANCE DE SUMAS Y SALDOS".
+             03 FILLER         PIC XXXX VALUE " al ".
+             03 DD-B-ED        PIC 99B.
+             03 FILLER         PIC X(3) VALUE "de ".
+             03 MM-B-ED        PIC X(10).
+             03 FILLER         PIC X(6) VALUE " de 19".
+             03 AA-B-ED        PIC 99.
+             03 FILLER         PIC X VALUE " ".
+             03 TITU-1         PIC X(13).
+             03 FILLER         PIC X VALUE SPACES.
+             03 TITU-2         PIC X(20).
+          02 TIT-40.
+             03 FILLER         PIC X(56) VALUE SPACES.
+             03 FILLER         PIC X(12) VALUE " --------- B".
+             03 FILLER         PIC X(12) VALUE "ALANCE DE SU".
+             03 FILLER         PIC X(14) VALUE "MAS ----------".
+             03 FILLER         PIC X(12) VALUE " --------- B".
+             03 FILLER         PIC X(12) VALUE "ALANCE DE SA".
+             03 FILLER         PIC X(14) VALUE "LDOS ---------".
+          02 TIT-4.
+             03 FILLER         PIC X(7) VALUE " CUENTA".
+             03 FILLER         PIC X(2) VALUE SPACES.
+             03 FILLER         PIC X(5) VALUE "AUX".
+             03 FILLER         PIC X(42) VALUE "DESCRIPCION".
+             03 FILLER         PIC X(19) VALUE "      D E B E".
+             03 FILLER         PIC X(19) VALUE "      H A B E R ".
+             03 FILLER         PIC X(19) VALUE "      D E B E ".
+             03 FILLER         PIC X(19) VALUE "      H A B E R ".
+          02 RAY-1.
+             03 FILLER         PIC X(132) VALUE ALL "-".
+          02 RAY-2.
+             03 FILLER         PIC X(132) VALUE ALL ".".
+          02 RAY-3.
+             03 FILLER         PIC X(132) VALUE ALL " ".
+          02 RAY-4.
+             03 FILLER         PIC X(74) VALUE SPACES.
+             03 FILLER         PIC X(38) VALUE ALL "-".
+          02 RAY-5.
+             03 FILLER         PIC X(92) VALUE SPACES.
+             03 FILLER         PIC X(20) VALUE ALL "-".
+          02 RAY-6.
+             03 FILLER         PIC X(92) VALUE SPACES.
+             03 FILLER         PIC X(20) VALUE ALL "=".
+          02 REN-1.
+             03 NOM-MAT-ED     PIC X(30).
+          02 REN-2.
+             03 CTA-ED         PIC ZZZZZZZBB.
+             03 AUX-ED         PIC 999BB BLANK WHEN ZERO.
+             03 NOM-CTA-ED     PIC X(40).
+             03 SUMA-D-ED      PIC ----,---,---,--9.99.
+             03 SUMA-C-ED      PIC ----,---,---,--9.99.
+             03 SALDO-D-ED     PIC ----,---,---,--9.99 BLANK 
+                                      WHEN ZERO.
+             03 SALDO-C-ED     PIC ----,---,---,--9.99 BLANK
+                                      WHEN ZERO.
+          02 TOT-1.
+             03 FILLER         PIC X(5) VALUE SPACES.
+             03 FILLER         PIC X(12) VALUE "- TOTAL DE: ".
+             03 MAT-TOTAL-ED   PIC X(50).
+             03 FILLER         PIC X(25) VALUE SPACES.
+             03 TOTAL-ED       PIC ---,---,---,--9.99.             
+      *------------------------------------------------------------
+      * SISTEMA: -CONTABILIDAD GENERAL- 
+      * NOMBRE DE REGISTRO: BAL-1.WOR
+      * VERSION: 001      FECHA: ENE'91
+      *============================================================

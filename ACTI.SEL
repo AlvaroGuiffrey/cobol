@@ -1,0 +1,16 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE ACTIVIDADES IMPUESTOS
+      *------------------------------------------------
+              SELECT ACTI
+              ASSIGN TO RANDOM "ACTI"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-ACTI
+              ALTERNATE RECORD KEY IS DET-ACT WITH DUPLICATES
+              FILE STATUS IS ERRORES.
+      *------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (IVA)
+      * NOMBRE SELECT: ACTI.SEL
+      * VERSION: 001   FECHA: OCT'92
+      *================================================
+

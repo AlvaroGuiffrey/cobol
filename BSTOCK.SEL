@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE BAJA DE ARTIC.
+      *------------------------------------------------
+              SELECT BSTOCK
+              ASSIGN TO RANDOM "BSTOCK"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-BSTOCK
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (OPERACIONES)
+      * NOMBRE SELECT: BSTOCK.SEL
+      * VERSION: 001   FECHA: FEB'97
+      *===============================================
+

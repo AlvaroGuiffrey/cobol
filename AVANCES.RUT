@@ -1,0 +1,35 @@
+       AVANCE-L.
+           ADD 1 TO CONT-RENG 
+           IF CONT-RENG > 66 
+                            MOVE SPACES TO LINEA
+                            WRITE LINEA AFTER PAGE
+                            PERFORM TITULOS THRU TITULOS-F.
+       AVANCE-L-F.
+           EXIT.
+
+       AVANCE-P.         
+           ADD 1 TO LIN 
+           COMPUTE L1 = LIN + 7
+           DISPLAY LINEA-PANTALLA LINE L1 POSITION 1.
+           
+           IF LIN NOT > 14 MOVE 0 TO CORTA
+                           GO TO AVANCE-P-F.
+           DISPLAY "-ESC- CANCELA, OTRO CONTINUA" LINE 24 POSITION 15 
+                                         SIZE 64
+           ACCEPT DED LINE 24 POSITION 60 NO BEEP
+                         TAB ON EXCEPTION CONDI MOVE 1 TO SW1.
+           IF ESCAPE-X MOVE 9 TO CORTA 
+                       GO TO AVANCE-P-F.
+           IF FLE1     MOVE 8 TO CORTA
+             PERFORM BORRA-PANT VARYING LIN FROM 1 BY 1 UNTIL LIN > 15
+             MOVE 0 TO LIN
+             GO TO AVANCE-P-F.
+           PERFORM BORRA-PANT VARYING LIN FROM 1 BY 1 UNTIL LIN > 15
+           MOVE 0 TO LIN CORTA
+           GO TO AVANCE-P-F.
+       
+       BORRA-PANT.
+           COMPUTE L1 = LIN + 7
+           DISPLAY SPACES LINE L1 POSITION 1 SIZE 79.
+       AVANCE-P-F.
+           EXIT.

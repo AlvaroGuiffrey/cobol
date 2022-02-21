@@ -1,0 +1,13 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE ARET
+      *-----------------------------------------------
+           SELECT ARETIRAR;
+                  ASSIGN TO RANDOM "ARETIRAR"
+                  ORGANIZATION IS INDEXED
+                  ACCESS MODE IS DYNAMIC
+                  RECORD KEY IS CLAVE-ARETIRAR.
+      *-----------------------------------------------
+      * NOMBRE SELECT: ARET.SEL
+      * VERSION: 001   FECHA: 11/94.
+      *===============================================
+

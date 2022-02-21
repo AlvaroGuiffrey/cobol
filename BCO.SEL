@@ -1,0 +1,4 @@
+           SELECT BCO ASSIGN TO RANDOM "BCO"
+                  ORGANIZATION IS INDEXED
+                  ACCESS MODE IS DYNAMIC
+                  RECORD KEY IS CLAVE-BCO.

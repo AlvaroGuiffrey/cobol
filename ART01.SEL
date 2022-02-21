@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO GENERAL DE ARTICULOS
+      *------------------------------------------------
+              SELECT ART01
+              ASSIGN TO RANDOM "ART01"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-ART01
+              FILE STATUS IS ERRORES.
+      *------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (STOCK)
+      * NOMBRE SELECT: ART01.SEL
+      * VERSION: 001   FECHA: JUL'90
+      *================================================
+

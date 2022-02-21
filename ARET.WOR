@@ -1,0 +1,18 @@
+       01  WREG-ARETIRAR.
+           03  WCLAVE-ARETIRAR.
+               05  WAR-EMP         PIC 9(4).
+               05  WAR-SUC         PIC 99.
+               05  WAR-RUB         PIC 9(6).
+               05  WAR-CTA         PIC 9(6).
+               05  WAR-S-CTA       PIC 99.
+               05  WAR-FECHA.
+                   07  WAR-DIA     PIC 99.
+                   07  WAR-MES     PIC 99.
+                   07  WAR-ANO     PIC 99.
+               05  WAR-COMPROB     PIC 9(8).
+               05  WAR-RENG        PIC 9(6).
+           03  WAR-ARTICULO        PIC 9(6).
+           03  WAR-CANTIDAD        PIC 9(6).
+           03  WAR-IMPORTE         PIC 9(8)V99.
+           03  WAR-IMP-ARE         PIC 9(8)V99.
+           03  WAR-RET-DEP         PIC 9.

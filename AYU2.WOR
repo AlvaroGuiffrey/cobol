@@ -1,0 +1,95 @@
+
+      *      AYU2.WOR        PARA BICHO
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-
+      * IMPRESION YUSTY
+      * PARA TANO
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+      *     02 TIT0-0.
+      *        03 FILLER       PIC 99 COMP-4 VALUE 15.
+      *        03 FILLER       PIC X(74) VALUE SPACES.
+      *        03 FILLER       PIC 99 COMP-4 VALUE 15.
+      *        03 FILLER       PIC 99 COMP-4 VALUE 14.
+      *        03 T-FAC1-ED    PIC X(12).
+      *        03 FILLER       PIC 99 COMP-4 VALUE 20.
+      *     02 TIT1-0.
+      *        03 FILLER       PIC XX VALUE SPACES.
+      *        03 FILLER       PIC X(9) VALUE "Se~or/es:".
+      *     02 TIT1-1.
+      *        03 Z10          PIC 99 COMP-4 VALUE 15.
+      *        03 Z11          PIC 99 COMP-4 VALUE 14.
+      *        03 FILLER       PIC X VALUE SPACES.
+      *        03 NOM1-ED      PIC X(30).
+      *        03 FILLER       PIC X(2) VALUE " (".
+      *        03 CTA1-ED      PIC ZZZZZ9 BLANK WHEN ZERO.
+      *        03 FILLER       PIC X(13) VALUE ")".
+      *        03 DD1-ED       PIC 99/.
+      *        03 MM1-ED       PIC 99/.
+      *        03 FILLER       PIC XX VALUE "19".
+      *        03 AA1-ED       PIC 99.
+      *        03 Z12          PIC 99 COMP-4 VALUE 20.
+      *     02 TIT1-2.
+      *        03 FILLER       PIC XX VALUE SPACES.
+      *        03 DOM1-ED      PIC X(40)BB.
+      *        03 CPOS1-ED     PIC 9999B.
+      *        03 FILLER       PIC XX VALUE "- ".
+      *        03 LOC1-ED      PIC X(30).
+      *     02 TIT1-3.
+      *        03 FILLER       PIC X(8) VALUE "  CUIT:".
+      *        03 IGAN1-ED     PIC X(15).
+      *        03 FILLER       PIC X(5) VALUE SPACES.
+      *        03 RES1-ED      PIC X(15).
+      *        03 FILLER       PIC X(8) VALUE "  TEL:".
+      *        03 TEL1-ED      PIC X(10).
+      *        03 FILLER       PIC X(41) VALUE SPACES.
+      *        03 CONDI1-ED    PIC X(20).
+      *     02 TIT1-4.
+      *        03 FILLER       PIC X(14) VALUE "  ING.BRUTOS:".
+      *        03 ING-BRUTOS1-ED PIC X(15).
+      *        03 FILLER       PIC X(5) VALUE "  -  ".
+      *        03 C-ING-BRUTOS1-ED  PIC X(15).
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+      * IMPRESION CHOZAS P/SOTELO FACTURAS "A"
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==
+      *    02 TIT1-1.
+      *       03 FILLER       PIC 99 COMP-4 VALUE 18.
+      *       03 FILLER       PIC X(52) VALUE SPACES.
+      *       03 DD1-ED       PIC 99B.
+      *       03 MM1-ED       PIC 99B.
+      *       03 AA1-ED       PIC 99.
+      *       03 FILLER       PIC X(11) VALUE SPACES.
+      *       03 DD1-V-ED     PIC 99B.
+      *       03 MM1-V-ED     PIC 99B.
+      *       03 AA1-V-ED     PIC 99.
+      *    02 TIT1-10.
+      *       03 FILLER       PIC X(52) VALUE SPACES.
+      *       03 T-FAC1-ED   PIC X(20).
+      *    02 TIT1-2.
+      *       03 NOM1-ED      PIC X(30).
+      *       03 FILLER       PIC X(30).
+      *       03 CTA1-ED      PIC ZZZZZ9 BLANK WHEN ZERO.
+      *    02 TIT1-3.
+      *       03 DOM1-ED      PIC X(40).
+      *    02 TIT1-4.
+      *       03 CPOS1-ED     PIC 9999.
+      *       03 FILLER       PIC X(3) VALUE " -".
+      *       03 LOC1-ED      PIC X(30).
+      *    02 TIT1-5.
+      *       03 FILLER       PIC X(6) VALUE "TEL.: ".
+      *       03 TEL1-ED      PIC X(15).
+      *    02 TIT1-51.
+      *       03 FILLER       PIC X(12) VALUE "ING.BRUTOS: ".
+      *       03 ING-BRUTOS1-ED PIC X(15).
+      *       03 FILLER       PIC X(5) VALUE "  -  ".
+      *       03 C-ING-BRUTOS1-ED PIC X(15).
+      *    02 TIT1-6.
+      *       03 FILLER       PIC X(7) VALUE SPACES.
+      *       03 RES1-ED      PIC X(15).
+      *       03 FILLER       PIC X(18) VALUE SPACES.
+      *       03 IGAN1-ED     PIC X(15).
+      *    02 TIT1-7.
+      *       03 CONDI1-ED    PIC X(20).
+      **=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+      * IMPRESION FORNES P/SOTELO FACTURAS "B"
+      * ojo : no anular nunca 
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==
+

@@ -1,0 +1,4 @@
+       01  WREG-BCO.
+           03  WCLAVE-BCO.
+               05  WBCO-NUMERO       PIC 9999.
+           03  WBCO-NOMBRE           PIC X(30).

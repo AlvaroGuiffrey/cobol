@@ -1,0 +1,21 @@
+       MOVER-ARET.
+           MOVE WAR-DIA               TO AR-DIA
+           MOVE WAR-MES               TO AR-MES
+           MOVE WAR-ANO               TO AR-ANO
+           MOVE WAR-ARTICULO          TO AR-ARTICULO.
+           MOVE WAR-CANTIDAD          TO AR-CANTIDAD.
+           MOVE WAR-IMPORTE           TO AR-IMPORTE.
+           MOVE WAR-IMP-ARE           TO AR-IMP-ARE.
+           MOVE 1                     TO AR-RET-DEP.
+
+       ARET-MOVER.
+           
+           MOVE AR-DIA                TO WAR-DIA
+           MOVE AR-MES                TO WAR-MES
+           MOVE AR-ANO                TO WAR-ANO
+           MOVE AR-ARTICULO           TO WAR-ARTICULO.
+           MOVE AR-CANTIDAD           TO WAR-CANTIDAD.
+           MOVE AR-IMPORTE            TO WAR-IMPORTE.
+           MOVE AR-IMP-ARE            TO WAR-IMP-ARE.
+           MOVE AR-RET-DEP            TO WAR-RET-DEP.
+

@@ -1,0 +1,92 @@
+      * *************************************************
+      *  rutina de conversion de pesos numeros a letra
+      * *************************************************
+
+       01  HS-AREAS-W.
+          02  HS-IMPORTE-W    PIC 9(12)V99.
+          02  HS-IMPORTE-WR REDEFINES HS-IMPORTE-W.
+              04  HS-IMPOR   OCCURS  4 TIMES PIC 999.
+              04  HS-IMPOR5                  PIC 99.
+          02  HS-AUX                         PIC 999 VALUE 0.
+          02  HS-AUX-R REDEFINES HS-AUX.
+              04  HS-CIFRA1      PIC 9.
+              04  HS-CIFRA2      PIC 9.
+              04  HS-CIFRA3      PIC 9.
+          02  HS-TABLA-1.
+              04  FILLER      PIC X(10) VALUE "02UN      ".
+              04  FILLER      PIC X(10) VALUE "03DOS     ".
+              04  FILLER      PIC X(10) VALUE "04TRES    ".
+              04  FILLER      PIC X(10) VALUE "06CUATRO  ".
+              04  FILLER      PIC X(10) VALUE "05CINCO   ".
+              04  FILLER      PIC X(10) VALUE "04SEIS    ".
+              04  FILLER      PIC X(10) VALUE "05SIETE   ".
+              04  FILLER      PIC X(10) VALUE "04OCHO    ".
+              04  FILLER      PIC X(10) VALUE "05NUEVE   ".
+              04  FILLER      PIC X(10) VALUE "05 DIEZ   ".
+              04  FILLER      PIC X(10) VALUE "05 ONCE   ".
+              04  FILLER      PIC X(10) VALUE "05 DOCE   ".
+              04  FILLER      PIC X(10) VALUE "06 TRECE  ".
+              04  FILLER      PIC X(10) VALUE "08 CATORCE".
+              04  FILLER      PIC X(10) VALUE "07 QUINCE ".
+          02  HS-T1 REDEFINES HS-TABLA-1 OCCURS 15 TIMES.
+              04  HS-LARGO1      PIC 99.
+              04  HS-TABLA1      PIC X(8).
+          02  HS-TABLA-2.
+              04  FILLER      PIC X(12) VALUE "06 DIECI    ".
+              04  FILLER      PIC X(12) VALUE "07 VEINTI   ".
+              04  FILLER      PIC X(12) VALUE "08 TREINTA  ".
+              04  FILLER      PIC X(12) VALUE "09 CUARENTA ".
+              04  FILLER      PIC X(12) VALUE "10 CINCUENTA".
+              04  FILLER      PIC X(12) VALUE "08 SESENTA  ".
+              04  FILLER      PIC X(12) VALUE "08 SETENTA  ".
+              04  FILLER      PIC X(12) VALUE "08 OCHENTA  ".
+              04  FILLER      PIC X(12) VALUE "08 NOVENTA  ".
+          02  HS-T2  REDEFINES HS-TABLA-2 OCCURS 09 TIMES.
+              04  HS-LARGO2      PIC 99.
+              04  HS-TABLA2      PIC X(10).
+          02  HS-TABLA-3.
+              04  FILLER      PIC X(14) VALUE "06CIENTO      ".
+              04  FILLER      PIC X(14) VALUE "07 VEINTE     ".
+              04  FILLER      PIC X(14) VALUE "05 CIEN       ".
+              04  FILLER      PIC X(14) VALUE "01O           ".
+              04  FILLER      PIC X(14) VALUE "11 QUINIENTOS ".
+              04  FILLER      PIC X(14) VALUE "07CIENTOS     ".
+              04  FILLER      PIC X(14) VALUE "12 SETECIENTOS".
+              04  FILLER      PIC X(14) VALUE "03 Y          ".
+              04  FILLER      PIC X(14) VALUE "12 NOVECIENTOS".
+              04  FILLER      PIC X(14) VALUE "03ES          ".
+          02  HS-T3  REDEFINES  HS-TABLA-3 OCCURS 10 TIMES.
+              04  HS-LARGO3      PIC 99.
+              04  HS-TABLA3      PIC X(12).
+          02  HS-TABLA-4.
+              04  FILLER      PIC X(9) VALUE "07 BILLON".
+              04  FILLER      PIC X(9) VALUE "07 MILLON".
+              04  FILLER      PIC X(9) VALUE "05 MIL   ".
+              04  FILLER      PIC X(9) VALUE "05 CON   ".
+              04  FILLER      PIC X(9) VALUE "05 CTS.  ".
+          02  HS-T4  REDEFINES HS-TABLA-4 OCCURS 5 TIMES.
+              04  HS-LARGO4      PIC 99.
+              04  HS-TABLA4      PIC X(07).
+       01 HS-PA-MOVER.
+          02  HS-ELEMENTO     PIC X(15) VALUE SPACES.
+          02  HS-ITEM REDEFINES HS-ELEMENTO OCCURS 15 TIMES PIC X.
+          02  HS-LITERAL-W    PIC X(240) VALUE SPACES.
+          02  HS-ITEM-LIT REDEFINES HS-LITERAL-W PIC X OCCURS 240 TIMES.
+       01 HS-LARGO            PIC 99 VALUE 0.
+       01 HS-I                PIC 99 VALUE 1.
+       01 HS-W                PIC 99 VALUE 0.
+       01 HS-X                PIC 99 VALUE 0.
+      *LINKAGE SECTION.
+       01  HS-IMPORTE     PIC 9(12)V99.
+       01  HS-LARGO-LIT   PIC 999.
+       01 HS-ELL.
+           02  HS-LITERAL     PIC X(240).
+           02  HS-R-L  REDEFINES HS-LITERAL PIC X(120) OCCURS 2.
+           02  HS-R-L1 REDEFINES HS-LITERAL.
+               04  HS-R          PIC X(60).
+               04  HS-R1         PIC X(60).
+               04  HS-R2         PIC X(60).
+               04  HS-R3         PIC X(60).
+               
+
+

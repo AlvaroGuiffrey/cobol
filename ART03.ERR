@@ -1,0 +1,31 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE ART03
+      *-----------------------------------------------
+       I-O-ART03  SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON ART03.
+       I-O-CREAART03.
+           DISPLAY SPACES LINE 25 POSITION 1 SIZE 80.
+           DISPLAY " ERROR -" LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 9 REVERSE.
+           DISPLAY "- EN ARCH.ART03  - LO CREA ? [ ]"
+                  LINE 25 POSITION 11 REVERSE.
+       OPCION-ART03.
+           ACCEPT COD1 LINE 25 POSITION 41 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT ART03
+                                       CLOSE ART03
+                                       OPEN I-O ART03
+                                       GO TO FIN-ART03.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPCION-ART03.
+       FIN-ART03.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (ERRORES)
+      * NOMBRE RUTINA: ART03.ERR
+      * VERSION: 001   FECHA: ENERO'91
+      *=================================================
+
+
+

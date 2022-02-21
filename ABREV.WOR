@@ -1,0 +1,19 @@
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+      * CAMPOS QUE ABREVIAN CODIGOS COMPROBANTES
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+       01 ABREV-LAS.
+          03 FILLER      PIC X(4) VALUE " CJ ".
+          03 FILLER      PIC X(4) VALUE " FC ".
+          03 FILLER      PIC X(4) VALUE " RC ".
+          03 FILLER      PIC X(4) VALUE " NC ".
+          03 FILLER      PIC X(4) VALUE " ND ".
+          03 FILLER      PIC X(4) VALUE " AD ".
+          03 FILLER      PIC X(4) VALUE " RM ".
+          03 FILLER      PIC X(4) VALUE "    ".
+          03 FILLER      PIC X(4) VALUE " OT ".
+       01 LAS-ABREV REDEFINES ABREV-LAS.
+          03 ABREV     PIC X(4) OCCURS 9 TIMES.
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+      * NOMBRE: ABREV.WOR
+      * VERSION: 001             FECHA: OCT'91
+      *=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

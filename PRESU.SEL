@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE PRESUPUESTO
+      *------------------------------------------------
+              SELECT PRESUPUE
+              ASSIGN TO RANDOM "PRESUPUE"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-PRE
+              FILE STATUS IS ERRORES.
+      *------------------------------------------------
+      * SISTEMA: -CONTABILIDAD GENERAL-
+      * NOMBRE SELECT: PRESU.SEL
+      * VERSION: 001   FECHA: ENE'91
+      *================================================
+

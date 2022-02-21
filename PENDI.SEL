@@ -1,0 +1,16 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE PENDI
+      *------------------------------------------------
+              SELECT PENDI;
+              ASSIGN TO RANDOM "PENDI"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-PEND
+              ALTERNATE RECORD KEY IS REMATE-PEND WITH DUPLICATES
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (PENDI)
+      * NOMBRE SELECT: PENDI.SEL
+      * VERSION: 001   FECHA: OCT'91
+      *===============================================
+

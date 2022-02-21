@@ -1,0 +1,6 @@
+      *==============================================
+      * SELECT DEL ARCHIVO DE IMP-132
+      *-----------------------------------------------
+           SELECT RENTAS;
+                  ASSIGN TO RANDOM "\DGR\PERCEP.DAT"
+                  ORGANIZATION IS LINE SEQUENTIAL.

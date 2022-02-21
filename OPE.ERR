@@ -1,0 +1,30 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE OPE
+      *-----------------------------------------------
+       I-O-OPE  SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON OPE.
+       I-O-CREAOP.
+           DISPLAY " SE PRODUCE ERROR " LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 22 REVERSE.
+           DISPLAY " EN ARCH. OPER.   - LO CREO? [ ]"
+                  LINE 25 POSITION 24 REVERSE.
+       OPCION-OP.
+           ACCEPT COD1 LINE 25 POSITION 54 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT OPE
+                                       CLOSE OPE
+                                       OPEN I-O OPE
+                                       GO TO FIN-OP.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPCION-OP.
+       FIN-OP.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (ERRORES)
+      * NOMBRE RUTINA: OPE.ERR
+      * VERSION: 001   FECHA: JUL'90
+      *=================================================
+
+
+

@@ -1,0 +1,218 @@
+      *=========================================================
+      * RECIBOS DE PLANES -REGISTROS DE IMPRESION
+      *---------------------------------------------------------
+          02 REC-1.
+             03 FILLER       PIC X(26) VALUE SPACES.
+             03 FILLER       PIC X(8) VALUE "RECIBO: ".
+             03 NRO-REC1     PIC ZZZZZZ.
+             03 FILLER       PIC X(78) VALUE SPACES.
+             03 FILLER       PIC X(8) VALUE "RECIBO: ".
+             03 NRO-REC2     PIC ZZZZZZ.
+          02 REC-2.
+             03 FILLER       PIC X VALUE "É".
+             03 FILLER       PIC X(39) VALUE ALL "Í".
+             03 FILLER       PIC X(4) VALUE "»  É".
+             03 FILLER       PIC X(42) VALUE ALL "Í".
+             03 FILLER       PIC X VALUE "Ñ".
+             03 FILLER       PIC X(44) VALUE ALL "Í".
+             03 FILLER       PIC X VALUE "»".
+          02 REC-3.
+             03 FILLER       PIC XX VALUE "º ".
+             03 EMP-REC1     PIC X(37).
+             03 FILLER       PIC X(6) VALUE " º  º ".
+             03 EMP-REC2     PIC X(39).
+             03 FILLER       PIC X(4) VALUE "  ³ ".
+             03 FILLER       PIC X(6) VALUE "PLAN: ".
+             03 IDE-REC2     PIC X(6).
+             03 FILLER       PIC X VALUE "-".
+             03 CUO-REC2     PIC 99.
+             03 FILLER       PIC XXX VALUE SPACES.
+             03 NUM-REC2     PIC X(24).
+             03 FILLER       PIC XX VALUE " º".
+          02 REC-4.
+             03 FILLER       PIC X(8) VALUE "º San Ma".
+             03 FILLER       PIC X(13) VALUE "rtin 1524  -".
+             03 FILLER       PIC X(19) VALUE "VILLA ELISA".
+             03 FILLER       PIC X(16) VALUE "º  º DOMICILIO: ".
+             03 DOM-REC2     PIC X(28).
+             03 FILLER       PIC X(3) VALUE "  ³".
+             03 FILLER       PIC X(7) VALUE " ORD.: ".
+             03 ORD-REC2     PIC 99.
+             03 FILLER       PIC X(10) VALUE SPACES.
+             03 MAR-REC2     PIC X(24).
+             03 FILLER       PIC XX VALUE " º".
+          02 REC-5.
+             03 FILLER       PIC X VALUE "Ç".
+             03 FILLER       PIC X(39) VALUE ALL "Ä".
+             03 FILLER       PIC X(16) VALUE "¶  º LOCALIDAD: ".
+             03 FILLER       PIC X(16) VALUE "3265-VILLA ELISA".
+             03 FILLER       PIC X(14) VALUE SPACES.
+             03 FILLER       PIC X(20) VALUE "³ VALOR ARTICULO :  ".
+             03 PRE-REC2     PIC Z,ZZZ,ZZZ,ZZ9.99.
+             03 FILLER       PIC X(9) VALUE SPACES.
+             03 FILLER       PIC X VALUE "º".
+          02 REC-6.
+             03 FILLER       PIC X(10) VALUE "º CUENTA: ".
+             03 CUE-REC1     PIC ZZZZ.
+             03 FILLER       PIC X(11) VALUE SPACES.
+             03 FILLER       PIC X(9) VALUE "** ZONA: ".
+             03 ZON-REC1     PIC 99.
+             03 FILLER       PIC X(20) VALUE " ** º  º TEL: 0447-8".
+             03 FILLER       PIC X(13) VALUE "0261  FAX: 04".
+             03 FILLER       PIC X(17) VALUE "47-80432".
+             03 FILLER       PIC X(16) VALUE "³ CUOTAS PAGAS: ".
+             03 PAG-REC2     PIC 99.
+             03 FILLER       PIC X(16) VALUE " - ADELANTADAS: ".
+             03 ADE-REC2     PIC 99.
+             03 FILLER       PIC X(9) VALUE SPACES.
+             03 FILLER       PIC X VALUE "º".
+          02 REC-7.
+             03 FILLER       PIC X(10) VALUE "º         ".
+             03 NOM-REC1     PIC X(29).
+             03 FILLER       PIC X(5) VALUE " º  Ç".
+             03 FILLER       PIC X(42) VALUE ALL "Ä".
+             03 FILLER       PIC X VALUE "Å".
+             03 FILLER       PIC X(44) VALUE ALL "Ä".
+             03 FILLER       PIC X VALUE "¶".
+          02 REC-8.
+             03 FILLER       PIC X VALUE "Ç".
+             03 FILLER       PIC X(39) VALUE ALL "Ä".
+             03 FILLER       PIC X(13) VALUE "¶  º CUENTA: ".
+             03 CUE-REC2     PIC ZZZZ.
+             03 FILLER       PIC X VALUE SPACES.
+             03 NOM-REC2     PIC X(26).
+             03 FILLER       PIC X(3) VALUE "  ³".
+             03 FILLER       PIC X(15) VALUE SPACES.
+             03 FILLER       PIC X(28) VALUE ALL "*".
+             03 FILLER       PIC X(2) VALUE " º".
+          02 REC-9.
+             03 FILLER       PIC X(10) VALUE "º PLAN  : ".
+             03 IDE-REC1     PIC XXXXXX.
+             03 FILLER       PIC X VALUE "-".
+             03 CUO-REC1     PIC 99.
+             03 FILLER       PIC X(7) VALUE " ORD.: ".
+             03 ORD-REC1       PIC 99.
+             03 FILLER       PIC X(12) VALUE SPACES.
+             03 FILLER       PIC X(4) VALUE "º  º".
+             03 FILLER       PIC X(14) VALUE SPACES.
+             03 CAL-REC2     PIC X(26) VALUE SPACES.
+             03 FILLER       PIC X(15) VALUE "  ³ CUOTA NRO: ".
+             03 EMI-REC2     PIC 99.
+             03 FILLER       PIC X(17) VALUE " ** VENCIMIENTO: ".
+             03 DD-REC2      PIC Z9/.
+             03 MM-REC2      PIC Z9/.
+             03 AA-REC2      PIC 99B.
+             03 FILLER       PIC X(5) VALUE " ** º".
+          02 REC-10.
+             03 FILLER       PIC X(10) VALUE "º CUOTA: ".
+             03 EMI-REC1     PIC 99.
+             03 FILLER       PIC X(28) VALUE SPACES.
+             03 FILLER       PIC X(11) VALUE "º  º ZONA: ".
+             03 ZON-REC2     PIC 99B(5).
+             03 LOC-REC2     PIC X(26).
+             03 FILLER       PIC X(3) VALUE "  ³".
+             03 FILLER       PIC X(15) VALUE SPACES.
+             03 FILLER       PIC X(28) VALUE ALL "*".
+             03 FILLER       PIC X(2) VALUE " º".
+          02 REC-11.
+             03 FILLER       PIC X(15) VALUE "º VENCIMIENTO: ".
+             03 DD-REC1      PIC 99/.
+             03 MM-REC1      PIC 99/.
+             03 AA-REC1      PIC 99.
+             03 FILLER       PIC X(17) VALUE SPACES.
+             03 FILLER       PIC X(4) VALUE "º  Ç".
+             03 FILLER       PIC X(42) VALUE ALL "Ä".
+             03 FILLER       PIC X VALUE "Á".
+             03 FILLER       PIC X(44) VALUE ALL "Ä".
+             03 FILLER       PIC X VALUE "¶".
+          02 REC-12.
+             03 FILLER       PIC X VALUE "º".
+             03 FILLER       PIC X(39) VALUE SPACES.
+             03 FILLER       PIC X(4) VALUE "º  º".
+             03 FILLER       PIC X(87) VALUE SPACES.
+             03 FILLER       PIC X VALUE "º".
+          02 REC-13.
+             03 FILLER     PIC X(22) VALUE "º IMPORTE CUOTA . . . ".
+             03 IMP-REC1   PIC Z,ZZZ,ZZZ,ZZ9.99.
+             03 FILLER     PIC X(20) VALUE "  º  º IMPORTE CUOTA".
+             03 FILLER     PIC X(8) VALUE " . . . .".
+             03 IMP-REC2   PIC Z,ZZZ,ZZZ,ZZ9.99.
+             03 FILLER     PIC X(20) VALUE "      SON DOLARES:".
+             03 FILLER     PIC X(29) VALUE SPACES.
+             03 FILLER     PIC X VALUE "º".
+          02 REC-14.
+             03 FILLER     PIC X VALUE "º".
+             03 FILLER     PIC X(39) VALUE SPACES.
+             03 FILLER     PIC X(4) VALUE "º  º".
+             03 FILLER     PIC X(87) VALUE SPACES.
+             03 FILLER     PIC X VALUE "º".
+          02 REC-15.
+             03 FILLER     PIC X(22) VALUE "º ACTUALIZACION . . . ".
+             03 FILLER     PIC X(18) VALUE SPACES.
+             03 FILLER     PIC X(18) VALUE "º  º ACTUALIZACION".
+             03 FILLER     PIC X(8) VALUE " . . . .".
+             03 FILLER     PIC X(65) VALUE SPACES.
+             03 FILLER     PIC X VALUE "º".
+          02 REC-16.
+             03 FILLER     PIC X VALUE "º".
+             03 FILLER     PIC X(19) VALUE SPACES.
+             03 FILLER     PIC X(18) VALUE ALL "Ä".
+             03 FILLER     PIC X(6) VALUE "  º  º".
+             03 FILLER     PIC X(20) VALUE SPACES.
+             03 FILLER     PIC X(20) VALUE ALL "Ä".
+             03 FILLER     PIC X(12) VALUE SPACES.
+             03 FILLER     PIC X(4) VALUE "Por ".
+             03 EMP1-REC2  PIC X(30).
+             03 FILLER     PIC XX VALUE " º".
+          02 REC-17.
+             03 FILLER     PIC X(22) VALUE "º IMPORTE TOTAL . . . ".
+             03 FILLER     PIC X(18) VALUE SPACES.
+             03 FILLER     PIC X(18) VALUE "º  º IMPORTE TOTAL".
+             03 FILLER     PIC X(8) VALUE " . . . .".
+             03 FILLER     PIC X(65) VALUE SPACES.
+             03 FILLER     PIC X VALUE "º".
+          02 REC-18.
+             03 FILLER     PIC X VALUE "º".
+             03 FILLER     PIC X(39) VALUE SPACES.
+             03 FILLER     PIC X(4) VALUE "º  º".
+             03 FILLER     PIC X(87) VALUE SPACES.
+             03 FILLER     PIC X VALUE "º".
+          02 REC-19.
+             03 FILLER     PIC X(20) VALUE "º FECHA:   /   /    ".
+             03 FILLER     PIC X(18) VALUE ALL "Í".
+             03 FILLER     PIC X(6) VALUE "  º  º".
+             03 FILLER     PIC X(20) VALUE " FECHA:   /   /     ".
+             03 FILLER     PIC X(20) VALUE ALL "Í".
+             03 FILLER     PIC X(47) VALUE SPACES.
+             03 FILLER     PIC X VALUE "º".
+          02 REC-20.
+             03 FILLER     PIC X VALUE "º".
+             03 FILLER     PIC X(39) VALUE SPACES.
+             03 FILLER     PIC X(4) VALUE "º  º".
+             03 FILLER     PIC X(87) VALUE SPACES.
+             03 FILLER     PIC X VALUE "º".
+          02 REC-21.
+             03 FILLER     PIC X(20) VALUE "º BOLETA NRO:       ".
+             03 FILLER     PIC X(20) VALUE " BCO.:              ".
+             03 FILLER     PIC X(4) VALUE "º  º".
+             03 FILLER     PIC X(20) VALUE " BOLETA NRO:        ".
+             03 FILLER     PIC X(4) VALUE "BCO:".
+             03 FILLER     PIC X(63) VALUE SPACES.
+             03 FILLER     PIC X VALUE "º".
+          02 REC-22.
+             03 FILLER     PIC X VALUE "È".
+             03 FILLER     PIC X(39) VALUE ALL "Í".
+             03 FILLER     PIC X(4) VALUE "¼  È".
+             03 FILLER     PIC X(87) VALUE ALL "Í".
+             03 FILLER     PIC X VALUE "¼".
+          02 REC-23.
+             03 FILLER     PIC X(44) VALUE SPACES.
+             03 MEN1-REC2  PIC X(40).
+             03 MEN2-REC2  PIC X(40).
+          02 REC-24.
+             03 FILLER     PIC X(132) VALUE SPACES.
+      *------------------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (PLANES)
+      * NOMBRE DE REGISTRO: PL-ABO.WOR
+      * VERSION: 001      FECHA: OCT'90
+      *============================================================

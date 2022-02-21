@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE ARTICULOS POR DESTINO
+      *------------------------------------------------
+              SELECT ORDEN
+              ASSIGN TO RANDOM "ORDEN"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-ORDEN
+              FILE STATUS IS ERRORES.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (STOCK)
+      * NOMBRE SELECT: ART02.SEL
+      * VERSION: 001   FECHA: JUL'90
+      *=================================================
+

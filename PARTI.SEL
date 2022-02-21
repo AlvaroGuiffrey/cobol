@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE PARTIDAS
+      *------------------------------------------------
+              SELECT PARTI
+              ASSIGN TO RANDOM "PARTI"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-PARTI
+              FILE STATUS IS ERRORES.
+      *------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (STOCK)
+      * NOMBRE SELECT: PARTI.SEL
+      * VERSION: 001   FECHA: JUL'90
+      *================================================
+

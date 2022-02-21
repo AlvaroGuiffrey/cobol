@@ -1,0 +1,16 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE PRODUNO
+      *-----------------------------------------------
+              SELECT PRODUNO;
+              ASSIGN TO RANDOM "PRODUNO"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-PRODUNO
+              ALTERNATE RECORD KEY IS NOM-NO WITH DUPLICATES
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -ADM. MUNICIPAL- 
+      * NOMBRE SELECT: PRODUNO.SEL
+      * VERSION: 001   FECHA: MAY'91
+      *===============================================
+

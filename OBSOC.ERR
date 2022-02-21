@@ -1,0 +1,32 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE OBRAS SOCIALES
+      *-----------------------------------------------
+       I-O-OBSOC SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON OBSOC.
+       I-O-CREAOBSOC.
+           MOVE SPACES TO MEN-1 MEN-2 MEN-3 MEN-4 MEN-5.
+           PERFORM MENS-PAN.
+           DISPLAY " ERROR -" LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 9 REVERSE.
+           DISPLAY "- EN ARCH.OB.SOC.- LO CREA ? [ ]"
+                  LINE 25 POSITION 11 REVERSE.
+       OPC-OBSOC.
+           ACCEPT COD1 LINE 25 POSITION 41 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT OBSOC
+                                       CLOSE OBSOC
+                                       OPEN I-O OBSOC
+                                       GO TO FIN-OBSOC.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPC-OBSOC.
+       FIN-OBSOC.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (ERRORES)
+      * NOMBRE RUTINA: OBSOC.ERR
+      * VERSION: 001   FECHA: JUL'90
+      *=================================================
+
+
+

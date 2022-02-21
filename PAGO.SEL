@@ -1,0 +1,15 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE PAGO
+      *-----------------------------------------------
+              SELECT PAGO;
+              ASSIGN TO RANDOM "PAGO"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-PAGO
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -ADM. MUNICIPAL- 
+      * NOMBRE SELECT: PAGO.SEL
+      * VERSION: 001   FECHA: MAY'91
+      *===============================================
+

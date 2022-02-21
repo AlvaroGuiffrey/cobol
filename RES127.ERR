@@ -1,0 +1,32 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE PERCEPCION RES.127/93 DGR
+      *-----------------------------------------------
+       I-O-RES SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON RES127.
+       I-O-CREARES.
+           MOVE SPACES TO MEN-1 MEN-2 MEN-3 MEN-4 MEN-5.
+           PERFORM MENS-PAN.
+           DISPLAY " ERROR -" LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 9 REVERSE.
+           DISPLAY "- EN ARCH.RES127- LO CREA ?  [ ]"
+                  LINE 25 POSITION 11 REVERSE.
+       OPC-RES.
+           ACCEPT COD1 LINE 25 POSITION 41 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT RES127
+                                       CLOSE RES127
+                                       OPEN I-O RES127
+                                       GO TO FIN-RES.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPC-RES.
+       FIN-RES.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (ERRORES)
+      * NOMBRE RUTINA: RES127.ERR
+      * VERSION: 001   FECHA: ENE'94
+      *=================================================
+
+
+

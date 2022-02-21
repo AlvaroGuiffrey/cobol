@@ -1,0 +1,15 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE PLANES
+      *-----------------------------------------------
+              SELECT PL-PLAN;
+              ASSIGN TO RANDOM "PL-PLAN"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-PL-PLAN
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (PLANES)
+      * NOMBRE SELECT: PL-PLAN.SEL
+      * VERSION: 001   FECHA: SET'90
+      *===============================================
+

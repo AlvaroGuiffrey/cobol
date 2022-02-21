@@ -1,0 +1,15 @@
+      *==============================================
+      * SELECT DEL ARCHIVO DE PANTALLAS
+      *----------------------------------------------
+                 SELECT PANTA
+                 ASSIGN TO RANDOM NOM-PAN
+                 ORGANIZATION IS RELATIVE
+                 ACCESS MODE IS DYNAMIC
+                 RELATIVE KEY IS CLV-PAN
+                 FILE STATUS IS ERRORES.
+      *----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (PANTALLAS)
+      * NOMBRE SELECT: PANTA.SEL
+      * VERSION: 001   FECHA: JUL'90
+      *==============================================
+

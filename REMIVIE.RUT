@@ -1,0 +1,89 @@
+      *    IMPRESION VIEJA DE REMITOS
+      ****************************************
+           PERFORM ESPA 5 TIMES.
+           MOVE 1 TO CONT-R.
+           MOVE 0 TO V.
+       IMPRE-REMI1.
+           MOVE SPACES TO IMP-R1-ED IMP-R2-ED IMP-R3-ED IMP-R4-ED.
+           MOVE SPACES TO IMP-R5-ED.
+           IF NUM-CONDI > 30 AND NUM-CONDI < 50
+              WRITE LIN-IMP02 FROM IMP-500 AFTER 1
+              ELSE WRITE LIN-IMP02 FROM IMP-50 AFTER 1.
+           MOVE COM-REP TO COM-REP-ED1.
+           WRITE LIN-IMP02 FROM IMP-51 AFTER 1.
+           PERFORM MUEVO-VEC THRU MUEVO-VEC-F.
+           WRITE LIN-IMP02 FROM IMP-52 AFTER 1.
+           ADD 1 TO CONT-R.
+           PERFORM MUEVO-VEC THRU MUEVO-VEC-F.
+           WRITE LIN-IMP02 FROM IMP-53 AFTER 1.
+           ADD 1 TO CONT-R.
+           PERFORM MUEVO-VEC THRU MUEVO-VEC-F.
+           WRITE LIN-IMP02 FROM IMP-54 AFTER 1.
+           ADD 1 TO CONT-R.
+           PERFORM MUEVO-VEC THRU MUEVO-VEC-F.
+           WRITE LIN-IMP02 FROM IMP-55 AFTER 1.
+           ADD 1 TO CONT-R.
+       IMPRE-REMI2.
+           IF V = 20 GO TO IMPRE-REMI-F.
+           IF V > 20 GO TO IMPRE-REMI-F.
+           PERFORM MUEVO-VEC1 THRU MUEVO-VEC1-F.
+           IF UNI-VEC(V) = 0 GO TO IMPRE-REMI-F.
+           WRITE LIN-IMP02 FROM IMP-56 AFTER 1.
+           ADD 1 TO CONT-R.
+           GO TO IMPRE-REMI2.
+       IMPRE-REMI-F.
+           EXIT.
+       MUEVO-VEC.
+           ADD 1 TO V.
+           MOVE SPACES TO COMA-R N-ART-R ENV-R COM-R.
+           MOVE 0 TO UNI1-R UNI2-R.
+           IF V > 20 GO TO MUEVO-VEC-F.
+           IF REP-VEC(V) = 0 GO TO MUEVO-VEC.
+           IF UNI-VEC(V) = 0 GO TO MUEVO-VEC.           
+           MOVE UNI-VEC(V) TO CANT-UNI.
+           MOVE UNI-1 TO UNI1-R.
+           IF UNI-2 = 0 MOVE SPACES TO COMA-R
+              ELSE MOVE "," TO COMA-R.
+           MOVE UNI-2 TO UNI2-R.
+           MOVE N-ART-VEC(V) TO N-ART-R.
+           MOVE ENV-VEC(V) TO ENV-R.
+           MOVE SPACES TO COM-R.
+           MOVE DET-VEC(V) TO COM-R.
+           IF CONT-R = 1
+              IF UNI-VEC(V) = 0 MOVE SPACES TO IMP-R1-ED 
+               ELSE MOVE IMP-R TO IMP-R1-ED.
+           IF CONT-R = 2
+              IF UNI-VEC(V) = 0 MOVE SPACES TO IMP-R2-ED 
+               ELSE MOVE IMP-R TO IMP-R2-ED.
+           IF CONT-R = 3 
+              IF UNI-VEC(V) = 0 MOVE SPACES TO IMP-R3-ED
+               ELSE MOVE IMP-R TO IMP-R3-ED.
+           IF CONT-R = 4 
+              IF UNI-VEC(V) = 0 MOVE SPACES TO IMP-R4-ED
+               ELSE MOVE IMP-R TO IMP-R4-ED. 
+       MUEVO-VEC-F.
+           EXIT.
+       MUEVO-VEC1.
+           MOVE SPACES TO IMP-R5-ED.
+           ADD 1 TO V.
+           MOVE SPACES TO COMA-R N-ART-R ENV-R COM-R.
+           MOVE 0 TO UNI1-R UNI2-R.
+           IF V > 20 GO TO MUEVO-VEC1-F.
+           IF REP-VEC(V) = 0 GO TO MUEVO-VEC1.
+           IF UNI-VEC(V) = 0 MOVE SPACES TO IMP-R5-ED
+                             GO TO MUEVO-VEC1-F.
+           MOVE UNI-VEC(V) TO CANT-UNI.
+           MOVE UNI-1 TO UNI1-R.
+           IF UNI-2 = 0 MOVE SPACES TO COMA-R
+              ELSE MOVE "," TO COMA-R.
+           MOVE UNI-2 TO UNI2-R.
+           MOVE N-ART-VEC(V) TO N-ART-R.
+           MOVE ENV-VEC(V) TO ENV-R.
+           MOVE DET-VEC(V) TO COM-R.
+           MOVE IMP-R TO IMP-R5-ED.
+       MUEVO-VEC1-F.
+           EXIT.    
+           
+      **************************************     
+           
+

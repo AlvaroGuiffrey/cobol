@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE NUMEROS DE ASIENTOS
+      *------------------------------------------------
+              SELECT NUMASI
+              ASSIGN TO RANDOM "NUMASI"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-NUMASI
+              FILE STATUS IS ERRORES.
+      *------------------------------------------------
+      * SISTEMA: -CONTABILIDAD GENERAL-
+      * NOMBRE SELECT: NUMASI.SEL
+      * VERSION: 001   FECHA: OCT'91
+      *================================================
+

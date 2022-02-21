@@ -1,0 +1,13 @@
+           
+       MOVER-RECARGO.
+              MOVE WREC-DETALLE   TO REC-DETALLE.
+              MOVE WREC-MONTO1    TO REC-MONTO1.
+              MOVE WREC-PORC1     TO REC-PORC1.
+              MOVE WREC-PORC2     TO REC-PORC2.
+       RECARGO-MOVER.
+              MOVE REC-DETALLE    TO WREC-DETALLE.
+              MOVE REC-MONTO1     TO WREC-MONTO1.
+              MOVE REC-PORC1      TO WREC-PORC1.
+              MOVE REC-PORC2      TO WREC-PORC2.
+
+

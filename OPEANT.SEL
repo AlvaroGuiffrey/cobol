@@ -1,0 +1,14 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE OPERACIONES CON ARTIC.
+      *------------------------------------------------
+              SELECT OPEANT
+              ASSIGN TO RANDOM NOMOPE
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-OPEANT.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (OPERACIONES)
+      * NOMBRE SELECT: OPEANT.SEL
+      * VERSION: 001   FECHA: JUL'90
+      *===============================================
+

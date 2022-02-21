@@ -1,0 +1,15 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE P-DE-CTAS
+      *-----------------------------------------------
+              SELECT P-DE-CTAS;
+              ASSIGN TO RANDOM "P-DE-CTAS"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-P-DE-CTAS
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- 
+      * NOMBRE SELECT: P-CTAS.SEL
+      * VERSION: 001   FECHA: JUL'90
+      *===============================================
+

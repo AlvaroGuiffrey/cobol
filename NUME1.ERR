@@ -1,0 +1,32 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE NUME1
+      *-----------------------------------------------
+       I-O-NUME1 SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON NUME1.
+       I-O-CREAMUNE1.
+           MOVE SPACES TO MEN-1 MEN-2 MEN-3 MEN-4 MEN-5.
+           PERFORM MENS-PAN.
+           DISPLAY " ERROR -" LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 9 REVERSE.
+           DISPLAY "- EN ARCH.NUME1  - LO CREA ? [ ]"
+                  LINE 25 POSITION 11 REVERSE.
+       OPC-NUME1.
+           ACCEPT COD1 LINE 25 POSITION 41 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT NUME1
+                                       CLOSE NUME1
+                                       OPEN I-O NUME1
+                                       GO TO FIN-NUME1.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPC-NUME1.
+       FIN-NUME1.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (ERRORES)
+      * NOMBRE RUTINA: NUME1.ERR
+      * VERSION: 001   FECHA: JUL'90
+      *=================================================
+
+
+

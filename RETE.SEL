@@ -1,0 +1,15 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE RETENCIONES D.G.R.
+      *-----------------------------------------------
+              SELECT RETE;
+              ASSIGN TO RANDOM "RETE"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-RETE
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- 
+      * NOMBRE SELECT: RETE.SEL
+      * VERSION: 001   FECHA: DIC'92
+      *===============================================
+

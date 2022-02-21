@@ -1,0 +1,16 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE OPERACIONES CON ARTIC.
+      *------------------------------------------------
+              SELECT OPERA
+              ASSIGN TO RANDOM "OPERA"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-OPERA
+              ALTERNATE RECORD KEY IS CLAVE-OPERA1 WITH DUPLICATES
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (OPERACIONES)
+      * NOMBRE SELECT: OPERA.SEL
+      * VERSION: 001   FECHA: JUL'90
+      *===============================================
+

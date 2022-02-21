@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE RES127 DGR
+      *------------------------------------------------
+              SELECT RES127;
+                    ASSIGN TO RANDOM "RES127"
+                    ORGANIZATION IS INDEXED
+                    ACCESS MODE IS DYNAMIC
+                    RECORD KEY IS CLAVE-RES
+                    FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (IVA)
+      * NOMBRE SELECT: RES127.SEL
+      * VERSION: 001   FECHA: ENE'94
+      *===============================================
+

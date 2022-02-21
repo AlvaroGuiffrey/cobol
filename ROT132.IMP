@@ -1,0 +1,38 @@
+      *=====================================================
+      * ROTULO DE IMPRESION DE 132 COLUMNAS
+      *-----------------------------------------------------
+       01 ROT132.
+          03 ROT132-1.
+             05 FILLER     PIC X(132) VALUE ALL "-".
+          03 ROT132-2.
+             05 FILLER     PIC X(132) VALUE ALL " ".
+          03 ROT132-3.
+             05 FILLER     PIC X(15) VALUE "SISTEMA DE GEST".
+             05 FILLER     PIC X(15) VALUE "ION COMERCIAL  ".
+             05 FILLER     PIC X(75) VALUE SPACES.
+             05 FILLER     PIC X(7) VALUE "FECHA: ".
+             05 DD-E132    PIC 99/.
+             05 MM-E132    PIC 99/.
+             05 AA-E132    PIC 99B.
+             05 FILLER     PIC X(6) VALUE "HORA: ".
+             05 HH-E132    PIC 99.
+             05 FILLER     PIC X VALUE ":".
+             05 MI-E132    PIC 99.
+          03 ROT132-4.
+             05 EMP-E132   PIC X(20).
+             05 FILLER     PIC X(8) VALUE " - SUC: ".
+             05 NUM-SUC-E132  PIC ZZBB.
+             05 SUC-E132   PIC X(20).
+          03 ROT132-5.
+             05 FILLER     PIC X(36) VALUE SPACES.
+             05 TIT-E132   PIC X(60).
+             05 FILLER     PIC X(26) VALUE SPACES.
+             05 FILLER     PIC X(6) VALUE " HOJA:".
+             05 HOJ-E132   PIC ZZZZ.
+      *------------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (IMPRESION)
+      * NOMBRE IMPRESION: ROT132.IMP
+      * VERSION: 001      JUL'90
+      *======================================================
+      
+

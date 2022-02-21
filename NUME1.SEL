@@ -1,0 +1,16 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE NUME1
+      *-----------------------------------------------
+              SELECT NUME1;
+              ASSIGN TO RANDOM "NUME1"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-NUME1
+              ALTERNATE RECORD KEY IS DET-NUME1 WITH DUPLICATES
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (STOCK)
+      * NOMBRE SELECT: NUME1.SEL
+      * VERSION: 001   FECHA: JUL'90
+      *===============================================
+

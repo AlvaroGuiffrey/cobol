@@ -1,0 +1,113 @@
+000000*======================================================
+      * CONVIERTE CIFRAS EN AUSTRALES EN LETRAS
+      *======================================================
+       77 PI-1    PIC 999 VALUE 0.
+       77 PI-2    PIC 999 VALUE 0.
+       77 PI-3    PIC 999 VALUE 0.
+       77 PAUX2   PIC 999 VALUE 0.
+       77 PPROTEX PIC X VALUE "*".
+       01 PTOT-GRAL      PIC 9(12)V99 VALUE 0.
+       01 PAREA-1.
+          02 FILLER PIC X(14) VALUE "04UNO         ".
+          02 FILLER PIC X(14) VALUE "04DOS         ".
+          02 FILLER PIC X(14) VALUE "05TRES        ".
+          02 FILLER PIC X(14) VALUE "07CUATRO      ".
+          02 FILLER PIC X(14) VALUE "06CINCO       ".
+          02 FILLER PIC X(14) VALUE "05SEIS        ".
+          02 FILLER PIC X(14) VALUE "06SIETE       ".
+          02 FILLER PIC X(14) VALUE "05OCHO        ".
+          02 FILLER PIC X(14) VALUE "06NUEVE       ".
+          02 FILLER PIC X(14) VALUE "05DIEZ        ".
+          02 FILLER PIC X(14) VALUE "05ONCE        ".
+          02 FILLER PIC X(14) VALUE "05DOCE        ".
+          02 FILLER PIC X(14) VALUE "06TRECE       ".
+          02 FILLER PIC X(14) VALUE "08CATORCE     ".
+          02 FILLER PIC X(14) VALUE "07QUINCE      ".
+          02 FILLER PIC X(14) VALUE "10DIECISEIS   ".
+          02 FILLER PIC X(14) VALUE "11DIECISIETE  ".
+          02 FILLER PIC X(14) VALUE "10DIECIOCHO   ".
+          02 FILLER PIC X(14) VALUE "11DIECINUEVE  ".
+          02 FILLER PIC X(14) VALUE "07VEINTE      ".
+          02 FILLER PIC X(14) VALUE "10VEINTIUNO   ".
+          02 FILLER PIC X(14) VALUE "10VEINTIDOS   ".
+          02 FILLER PIC X(14) VALUE "11VEINTITRES  ".
+          02 FILLER PIC X(14) VALUE "13VEINTICUATRO".
+          02 FILLER PIC X(14) VALUE "12VEINTICINCO ".
+          02 FILLER PIC X(14) VALUE "11VEINTISEIS  ".
+          02 FILLER PIC X(14) VALUE "12VEINTISIETE ".
+          02 FILLER PIC X(14) VALUE "11VEINTIOCHO  ".
+          02 FILLER PIC X(14) VALUE "12VEINTINUEVE ".
+       01 PAREA-1R REDEFINES PAREA-1.
+          02 PTABLA-1 OCCURS 29 TIMES PIC X(14).
+       01 PAREA-2.
+          02 FILLER PIC X(11) VALUE "           ".
+          02 FILLER PIC X(11) VALUE "           ".
+          02 FILLER PIC X(11) VALUE "08TREINTA  ".
+          02 FILLER PIC X(11) VALUE "09CUARENTA ".
+          02 FILLER PIC X(11) VALUE "10CINCUENTA".
+          02 FILLER PIC X(11) VALUE "08SESENTA  ".
+          02 FILLER PIC X(11) VALUE "08SETENTA  ".
+          02 FILLER PIC X(11) VALUE "08OCHENTA  ".
+          02 FILLER PIC X(11) VALUE "08NOVENTA  ".
+       01 PAREA-2R REDEFINES PAREA-2.
+             02 PTABLA-2 OCCURS 9 TIMES PIC X(11).
+       01 PAREA-3.
+          02 FILLER PIC X(15) VALUE "07CIENTO       ".
+          02 FILLER PIC X(15) VALUE "11DOSCIENTOS   ".
+          02 FILLER PIC X(15) VALUE "12TRESCIENTOS  ".
+          02 FILLER PIC X(15) VALUE "14CUATROCIENTOS".
+          02 FILLER PIC X(15) VALUE "11QUINIENTOS   ".
+          02 FILLER PIC X(15) VALUE "12SEISCIENTOS  ".
+          02 FILLER PIC X(15) VALUE "12SETECIENTOS  ".
+          02 FILLER PIC X(15) VALUE "12OCHOCIENTOS  ".
+          02 FILLER PIC X(15) VALUE "12NOVECIENTOS  ".
+       01 PAREA-3R REDEFINES PAREA-3.
+             02 PTABLA-3 OCCURS 9 TIMES PIC X(15).
+       01 PUN        PIC X(10) VALUE "03UN".
+       01 PVEINTIUN  PIC X(10) VALUE "09VEINTIUN".
+       01 PCIEN      PIC X(10) VALUE "05CIEN".
+       01 PMIL       PIC X(10) VALUE "04MIL".
+       01 PMILLON    PIC X(10) VALUE "07MILLON".
+       01 PMILLONES  PIC X(10) VALUE "09MILLONES".
+       01 PY         PIC X(10) VALUE "02Y".
+       01 PUNO       PIC X(14) VALUE "04UNO".
+       01 PVEINTIUNO PIC X(14) VALUE "10VEINTIUNO".
+       01 PPESOS     PIC X(16) VALUE "01 ".
+       01 PCON-CTVOS.
+          02 FILLER PIC X(6) VALUE "11CON".
+          02 PCTVOS  PIC 99.
+          02 FILLER PIC X(5) VALUE "/100".
+       01 PANALISIS  PIC 999.
+       01 PPF REDEFINES PANALISIS.
+             02 PANALISIS-1   PIC 9.
+             02 PANALISIS-2   PIC 9.
+             02 PANALISIS-3   PIC 9.
+       01 PILLER REDEFINES PANALISIS.
+             03 FILLER PIC 9.
+             03 PANALISIS-23 PIC 99.
+       01 PAUX1.
+          02 PIND-AUX1    PIC 99.
+          02 PITEM-AUX1   OCCURS 30 PIC X.
+       01 PNUME    PIC 9(12)V99.
+       01 PF1 REDEFINES PNUME.
+             03 PNUMERO-1   PIC 999.
+             03 PNUMERO-2   PIC 999.
+             03 PNUMERO-3   PIC 999.
+             03 PNUMERO-4   PIC 999.
+             03 PNUMERO-5   PIC 99.
+       01 PAREA-LIMITES.
+          02 PTAB-LIM OCCURS 3.
+             03 PLIMITE PIC 999.
+             03 FILLER PIC X.
+       01 PAREA-SAL.
+          02 PSALIDA OCCURS 3.
+             03 PITEM-SAL OCCURS 133 TIMES PIC X.
+       01 PAREA-SALR REDEFINES PAREA-SAL.
+             03 PSALIDA-1   PIC X(133).
+             03 PSALIDA-2   PIC X(133).
+             03 PSALIDA-3   PIC X(133).
+      *=========================================================
+      * SISTEMA: -GESTION COMERCIAL- (IMPRESION IMPORTES)
+      * NOMBRE ARCHIVO: AUSTRAL.WOR
+      * VERSION: 001    FECHA: DIC'90
+      *=========================================================

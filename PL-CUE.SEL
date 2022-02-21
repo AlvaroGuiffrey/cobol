@@ -1,0 +1,15 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE PLANES-CUENTAS
+      *-----------------------------------------------
+              SELECT PL-CUE;
+              ASSIGN TO RANDOM "PL-CUE"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-PL-CUE
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (PLANES)
+      * NOMBRE SELECT: PL-CUE.SEL
+      * VERSION: 001   FECHA: SET'90
+      *===============================================
+

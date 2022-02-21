@@ -1,0 +1,16 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE OBRA SOCIALES
+      *-----------------------------------------------
+              SELECT OBSOC;
+              ASSIGN TO RANDOM "OBSOC"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-OBSOC
+              ALTERNATE RECORD KEY IS DET-OSO WITH DUPLICATES
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (FARMACIAS)
+      * NOMBRE SELECT: OBSOC.SEL
+      * VERSION: 001   FECHA: JUL'90
+      *===============================================
+

@@ -1,0 +1,32 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE PRODUPA
+      *-----------------------------------------------
+       I-O-PRODUPA SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON PRODUPA.
+       I-O-CREAPRO.
+           MOVE SPACES TO MEN-1 MEN-2 MEN-3 MEN-4 MEN-5.
+           PERFORM MENS-PAN.
+           DISPLAY " ERROR -" LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 9 REVERSE.
+           DISPLAY "- EN ARCH.PRODUPA- LO CREA ? [ ]"
+                  LINE 25 POSITION 11 REVERSE.
+       OPC-PRO.
+           ACCEPT COD1 LINE 25 POSITION 41 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT PRODUPA
+                                       CLOSE PRODUPA
+                                       OPEN I-O PRODUPA
+                                       GO TO FIN-PRO.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPC-PRO.
+       FIN-PRO.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -ADM. MUNICIPAL- (ERRORES)
+      * NOMBRE RUTINA: PRODUPA.ERR
+      * VERSION: 001   FECHA: MAY'91
+      *=================================================
+
+
+

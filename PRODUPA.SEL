@@ -1,0 +1,15 @@
+      *===============================================
+      * SELECT DEL ARCHIVO DE PRODUPA
+      *-----------------------------------------------
+              SELECT PRODUPA;
+              ASSIGN TO RANDOM "PRODUPA"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-PRODUPA
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -ADM. MUNICIPAL- 
+      * NOMBRE SELECT: PRODUPA.SEL
+      * VERSION: 001   FECHA: MAY'91
+      *===============================================
+

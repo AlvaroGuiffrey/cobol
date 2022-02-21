@@ -1,0 +1,15 @@
+      *================================================
+      * SELECT DEL ARCHIVO DE OPE CON ARTIC.
+      *------------------------------------------------
+              SELECT OPE
+              ASSIGN TO RANDOM "OPE"
+              ORGANIZATION IS INDEXED
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CLAVE-OPE
+              FILE STATUS IS ERRORES.
+      *-----------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (OPERACIONES)
+      * NOMBRE SELECT: OPE.SEL
+      * VERSION: 001   FECHA: ENE'91
+      *===============================================
+

@@ -1,0 +1,32 @@
+      *===============================================
+      * ERROR EN ARCHIVO DE RETE
+      *-----------------------------------------------
+       I-O-RETE SECTION.
+           USE AFTER STANDARD ERROR PROCEDURE ON RETE.
+       I-O-CREARETE.
+           MOVE SPACES TO MEN-1 MEN-2 MEN-3 MEN-4 MEN-5.
+           PERFORM MENS-PAN.
+           DISPLAY " ERROR -" LINE 25 POSITION 1
+                      REVERSE.
+           DISPLAY ERRORES LINE 25 POSITION 9 REVERSE.
+           DISPLAY "- EN ARCH.RETE   - LO CREA ? [ ]"
+                  LINE 25 POSITION 11 REVERSE.
+       OPC-RETE.
+           ACCEPT COD1 LINE 25 POSITION 41 REVERSE.
+           IF COD1 = "S" OR COD1 = "s" OPEN OUTPUT RETE
+                                       CLOSE RETE
+                                       OPEN I-O RETE
+                                       GO TO FIN-RETE.
+           IF COD1 = "N" OR COD1 = "n" STOP RUN.
+           IF COD1 NOT = "N" OR COD1 NOT = "n"
+                   GO TO OPC-RETE.
+       FIN-RETE.
+           DISPLAY SPACES SIZE 70 LINE 25 POSITION 1.
+      *-------------------------------------------------
+      * SISTEMA: -GESTION COMERCIAL- (ERRORES)
+      * NOMBRE RUTINA: RETE.ERR
+      * VERSION: 001   FECHA: DIC'92
+      *=================================================
+
+
+
